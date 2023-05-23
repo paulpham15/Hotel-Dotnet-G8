@@ -1,0 +1,66 @@
+@model IEnumerable<HotelDotNet.Data.Hotel>
+
+@{
+    ViewData["Title"] = "Hotel";
+}
+
+<p class="title-cms">Hotel Manage</p>
+
+<p>
+    <a asp-action="Create"class="btn btn-primary"><span class="mdi mdi-plus"></span>Create New Hotel</a>
+   
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rating)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.HotelPicture)
+            </th>
+            <th>Actions</th>
+            <th>Advance</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            
+            <td>
+                @if (item.HotelPicture.Length > 0 && item.HotelPicture !=null)
+                    {
+                        <img src="@item.HotelPicture" style="height: 100px; width: 100px;" />
+                    }
+                    else
+                    { <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png" style="height: 100px; width: 100px;" />}
+            </td>
+            <td>
+                <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.Id"><i class="far fa-edit" style="color: #ffffff;"></i></a>
+                <a asp-action="Details" class="btn btn-info" asp-route-id="@item.Id"><i class="fas fa-info-circle" style="color: #ffffff;"></i></a>
+                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id"><i class="fas fa-trash" style="color: #ffffff;"></i></a>
+<td>
+                <a asp-action="CreateRoom" class="btn btn-primary" asp-route-id="@item.Id" >Create Room</a>
+            </td>
+            </td>
+
+        </tr>
+}
+    </tbody>
+</table>

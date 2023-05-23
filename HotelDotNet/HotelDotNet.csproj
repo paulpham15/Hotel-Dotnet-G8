@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-HotelDotNet-6a8601fc-9c0f-4194-977d-e5bcfe43bde1</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Contracts\" />
+    <None Remove="Respositories\" />
+    <None Remove="Configurations\" />
+    <None Remove="Controllers\" />
+    <None Remove="Utility\" />
+    <None Remove="Utility\Image\" />
+    <None Remove="Views\User\" />
+    <None Remove="Areas\Admin\" />
+    <None Remove="Areas\Admin\Views\" />
+    <None Remove="Areas\Admin\Views\Shared\Admin\" />
+    <None Remove="Areas\Admin\Views\Dashboard\" />
+    <None Remove="Views\HomePage\" />
+    <None Remove="favicon.ico" />
+    <None Remove="Views\Shared\home.ico" />
+    <None Remove="Areas\Admin\Views\Booking\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.16" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.15" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.16" />
+    <PackageReference Include="bootstrap.chosen" Version="1.0.0" />
+    <PackageReference Include="AWSSDK.S3" Version="3.7.104.16" />
+    <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="21.2.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contracts\" />
+    <Folder Include="Respositories\" />
+    <Folder Include="Configurations\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Utility\" />
+    <Folder Include="Utility\Image\" />
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\img\HotelImg\" />
+    <Folder Include="Views\User\" />
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Admin\Views\Shared\Admin\" />
+    <Folder Include="Areas\Admin\Views\Dashboard\" />
+    <Folder Include="Views\HomePage\" />
+    <Folder Include="Areas\Admin\Views\Booking\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\img\" />
+    <Content Remove="wwwroot\img\HotelImg\" />
+    <Content Remove="wwwroot\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="home.ico" />
+    <Content Include="Views\Shared\home.ico" />
+  </ItemGroup>
+</Project>

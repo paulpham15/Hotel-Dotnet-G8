@@ -1,0 +1,152 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using System.Security.Claims
+@inject SignInManager<HotelDotNet.Data.User> SignInManager
+@inject UserManager<HotelDotNet.Data.User> UserManager
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - HotelDotNet</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/user.ico" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/homepage.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HotelDotNet.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="header-homepage">
+        <div class="logo-home">
+            <a asp-area="" asp-controller="HomePage" asp-action="Index">
+                <span class="brand-title hide-menu m-l-5"><span style="color: black;">G8</span>Booking</span>
+            </a>
+        </div>
+        <nav class="nav-homepage">
+
+            <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            <a class="nav-link" asp-area="" asp-controller="HotelExplore" asp-action="Index">Hotel</a>
+            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Explore</a>
+        </nav>
+        <div class="nav-login">
+            @if (SignInManager.IsSignedIn(User))
+            {
+                if (User.IsInRole("Admin"))
+                {
+                    <span>Hello Admin &nbsp </span>
+
+                    <a class="btn btn-login" style="width: 180px;" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Go to Dashboard</a>
+                }
+                else
+                {
+        
+           
+            <form  asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "HomePage", new { area = "" })">
+                <a>Hello @User.Identity.Name</a>
+                <button type="submit" class="btn btn-login">Log Out</button>
+            </form>
+       
+                 
+                   
+                }
+            }
+            else
+            {
+        <a class="btn btn-login"  asp-area="Identity" asp-page="/Account/Login">Login/Signup</a>
+            }
+
+        </div>
+    </header>
+    <div class="container-homepage">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-muted footer-homepage">
+        <div class="container container-footer">
+            <div class="row">
+                <div class="col-sm">
+                    <a href="#">
+                        <span class="brand-title hide-menu m-l-5"><span style="color: black;">G8</span>Booking</span>
+                    </a>
+                    </br>
+                    <span class="footer-subtext">
+                        We kaboom your beauty holiday
+                        instantly and memorable.
+                    </span>
+                </div>
+                <div class="col-sm">
+                    <span class="footer-title">For Beginner</span>
+                    </br>
+                    </br>
+                    <a class="footer-subtext">
+                        New account
+                    </a>
+                    </br>
+                    <a class="footer-subtext">
+                        Start Booking a Room
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <span class="footer-title">Explore</span>
+                    </br>
+                    </br>
+                    <a class="footer-subtext">
+                        Our Carrers
+                    </a>
+                    </br>
+                    <a class="footer-subtext">
+                        Privacy
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <span class="footer-title">Contact Us</span>
+                    </br>
+                    </br>
+                    <a class="footer-subtext">
+                        HotLine: xxxxxxxxxx
+                    </a>
+                    </br>
+                    <a class="footer-subtext">
+                        Address : UEF University
+                    </a>
+                </div>
+                <span class="footer-coppyright">Copyright 2023 • All rights reserved • G8Booking </span">
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>$(function () {
+            $('.table').DataTable();
+            $(".datepicker").datepicker({
+                dateFormat: "yy-mm-dd"
+            });
+        });</script>
+    <script>const links = document.querySelectorAll('.nav-link');
+
+        if (links.length) {
+            links.forEach((link) => {
+                link.addEventListener('click', (e) => {
+                    links.forEach((link) => {
+                        link.classList.remove('active');
+                    });
+                    e.preventDefault();
+                    link.classList.add('active');
+                });
+            });
+        }</script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

@@ -1,0 +1,82 @@
+@model HotelRoomsVM
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+<h3>Hotel Detail</h3>
+<hr />
+<dl class="row">
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Name)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Name)
+    </dd>
+    </br>
+
+    </br>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Location)
+    </dt>
+
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Location)
+    </dd>
+    </br>
+
+    </br>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Rating)
+    </dt>
+
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Rating)
+    </dd>
+</dl>
+    </hr>
+    <div class="card">
+        <div class="card-header">
+            <h2>Room in @Model.Name</h2>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col">Room Name</div>
+                    <div class="col">Room Type</div>
+                    <div class="col">Price</div>
+                    <div class="col">Action</div>
+                </div>
+            </li>
+            @foreach (var allocation in Model.RoomAllocations)
+            {
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col"><h6>@allocation.RoomName</h6> </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-info">
+                                @allocation.RoomTypeString
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-dark">
+                                @allocation.Price$ Per Day
+                            </button>
+                        </div>
+                        <div class="col">
+                            <a asp-action="Edit" class="btn btn-warning" asp-route-id="@allocation.Id"><i class="far fa-edit" style="color: #ffffff;"></i></a>
+                            <a asp-action="Details" class="btn btn-info" asp-route-id="@allocation.Id"><i class="fas fa-info-circle" style="color: #ffffff;"></i></a>
+                            <a asp-action="Delete" class="btn btn-danger" asp-route-id="@allocation.Id"><i class="fas fa-trash" style="color: #ffffff;"></i></a>
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+
+
+        <hr />
+
+
+
+

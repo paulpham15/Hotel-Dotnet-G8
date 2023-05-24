@@ -17,6 +17,7 @@
     <title>@ViewData["Title"] - HotelDotNet</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <link rel="stylesheet" href="~/HotelDotNet.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +32,7 @@
     <link rel="canonical" href="https://www.wrappixel.com/templates/xtreme-admin-lite/" />
 
     <!-- Custom CSS -->
-    @*<link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">*@
+    <link href="~/lib/chartist/dist/chartist.min.css" rel="stylesheet">
     <!-- Custom CSS -->
 
     <link href="~/css/style.min.css" rel="stylesheet">
@@ -191,6 +192,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
@@ -206,33 +208,35 @@
         <!--Menu sidebar -->
         <script src="~/js/sidebarmenu.js"></script>
         <!--Custom JavaScript -->
-
+        <script src="~/lib/chartist/dist/chartist.min.js"></script>
+        <script src="~/lib/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
         <script src="~/js/custom.js"></script>
         <script src="~/js/app-style-switcher.js"></script>
+
         <!--This page JavaScript -->
         <!--chartis chart-->
-        @*<script src="~/js/pages/dashboards/dashboard1.js"></script>*@
+        <script src="~/js/dashboard1.js"></script>
         <script>$(function () {
-    $.extend(true, $.fn.dataTable.defaults, {
-        language: {
-            search: ""
-        }
-    });
-    
-    $('.table').DataTable();
-    $('[type=search]').each(function () {
-        $(this).attr("placeholder", "Search...");
-        $(this).before('<span class="fa fa-search"></span>');
-    });
+                $.extend(true, $.fn.dataTable.defaults, {
+                    language: {
+                        search: ""
+                    }
+                });
+
+                $('.table').DataTable();
+                $('[type=search]').each(function () {
+                    $(this).attr("placeholder", "Search...");
+                    $(this).before('<span class="fa fa-search"></span>');
+                });
                 $(".datepicker").datepicker({
                     dateFormat: "yy-mm-dd"
                 });
-    $('#example-getting-started').multiselect();
-    $('#select-box').multipleSelect(
-        { showClear: true}
-    );
-   
-   
+                $('#example-getting-started').multiselect();
+                $('#select-box').multipleSelect(
+                    { showClear: true }
+                );
+
+
             });</script>
         @await RenderSectionAsync("Scripts", required: false)
 </body>

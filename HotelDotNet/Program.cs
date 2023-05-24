@@ -27,7 +27,7 @@ builder.Services.AddScoped<IRoomRespository, RoomRepository>();
 builder.Services.AddScoped<IHotelRespository, HotelResposiory>();
 builder.Services.AddScoped<IRoomFacilitiesRespository, RoomFacilitiesRepository>();
 var app = builder.Build();
-
+app.UseStatusCodePagesWithReExecute("/Error/Index", "?statusCode={0}");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

@@ -53,11 +53,25 @@ img {
 /*.dataTables_filter{
     margin-bottom: 10px;
 }*/
-.dataTables_filter input {
-    height: 30px;
-    width: 250px;
-    border-radius: 5px
+.dataTables_filter {
+    position: relative;
 }
+
+    .dataTables_filter input {
+        width: 250px;
+        height: 32px;
+        background: #fcfcfc;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+
+        text-indent: 10px;
+    }
+
+    .dataTables_filter .fa-search {
+        position: absolute;
+        top: 9px;
+        left: 230px;
+    }
 .dataTables_filter label {
     display: inline-flex;
     justify-content: center;

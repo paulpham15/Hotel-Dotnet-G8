@@ -213,7 +213,17 @@
         <!--chartis chart-->
         @*<script src="~/js/pages/dashboards/dashboard1.js"></script>*@
         <script>$(function () {
-                $('.table').DataTable();
+    $.extend(true, $.fn.dataTable.defaults, {
+        language: {
+            search: ""
+        }
+    });
+    
+    $('.table').DataTable();
+    $('[type=search]').each(function () {
+        $(this).attr("placeholder", "Search...");
+        $(this).before('<span class="fa fa-search"></span>');
+    });
                 $(".datepicker").datepicker({
                     dateFormat: "yy-mm-dd"
                 });
@@ -221,6 +231,8 @@
     $('#select-box').multipleSelect(
         { showClear: true}
     );
+   
+   
             });</script>
         @await RenderSectionAsync("Scripts", required: false)
 </body>

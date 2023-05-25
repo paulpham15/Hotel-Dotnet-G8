@@ -55,6 +55,7 @@ namespace HotelDotNet.Controllers
         // GET: Hotel/Create
         public IActionResult Create()
         {
+            ViewBag.Location = new SelectList(_context.Locations, "Name", "Name");
             return View();
         }
 

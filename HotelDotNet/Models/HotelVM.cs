@@ -7,7 +7,7 @@ namespace HotelDotNet.Models
         public string Location { get; set; }
         public string Description { get; set; }
         //public RoomVM Room { get; set; }
-        public string? Rating { get; set; }
+        public int? Rating { get; set; }
         public IFormFile? HotelPicture { get; set; }
         public string? ImageUrl { get; set; }
         

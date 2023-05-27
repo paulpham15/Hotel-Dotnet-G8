@@ -29,6 +29,18 @@ namespace HotelDotNet.Respositories
             
             return hotelRoomAllocationVM;
         }
+        public async Task<List<HotelVM>> GetPopularHotel(int number)
+        {
+            var popularHotel = context.Hotels.Where(q => q.Rating >= 3).Take(number).ToListAsync();
+            var HotelPopularVM = mapper.Map<List<HotelVM>>(popularHotel);
+            return HotelPopularVM;
+        }
+        public async Task<List<HotelVM>> GetHotelWithLocalte(string locate)
+        {
+            var hotelLocate = context.Hotels.Where(q => q.Location == locate).ToListAsync();
+            var HotelLocalVM = mapper.Map<List<HotelVM>>(hotelLocate);
+            return HotelLocalVM;
+        }
     }
 }
 

@@ -10,7 +10,7 @@ namespace HotelDotNet.Data
         public string Name { get; set; }
 		public string Location { get; set; }
 
-        public string? Rating { get; set; }
+        public int? Rating { get; set; }
 	
 		public string? Description { get; set; }
 		

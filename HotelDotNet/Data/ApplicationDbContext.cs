@@ -20,7 +20,7 @@ namespace HotelDotNet.Data
             builder.ApplyConfiguration(new SeedUserRoleConfig());
             builder.ApplyConfiguration(new SeedLocationConfig());
         }
-        public DbSet<HotelLocation> Locations { get; set; }
+        
         public DbSet<Hotel> Hotels { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<Room> Rooms { get; set; }
@@ -31,6 +31,7 @@ namespace HotelDotNet.Data
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<OrderHeader> OrderHeaders { get; set; }
         public DbSet<Booking> Booking { get; set; }
-     
+        public DbSet<HotelLocation> Locations { get; set; }
+
     }
     }

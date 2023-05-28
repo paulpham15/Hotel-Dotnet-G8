@@ -37,6 +37,8 @@
           "AWSSDK.S3": "3.7.104.16",
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Bootstrap.v3.Datetimepicker": "4.17.49",
+          "Bootstrap.v3.Datetimepicker.CSS": "4.17.49",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.16",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.16",
           "Microsoft.AspNetCore.Identity.UI": "6.0.16",
@@ -397,9 +399,31 @@
           "lib/netcoreapp3.1/AWSSDK.S3.dll": {}
         }
       },
+      "bootstrap/3.4.1": {
+        "dependencies": {
+          "jQuery": "1.9.1"
+        }
+      },
       "bootstrap.chosen/1.0.0": {
         "dependencies": {
-          "jQuery": "1.6.4"
+          "jQuery": "1.9.1"
+        }
+      },
+      "bootstrap.less/3.4.1": {
+        "dependencies": {
+          "jQuery": "1.9.1"
+        }
+      },
+      "Bootstrap.v3.Datetimepicker/4.17.49": {
+        "dependencies": {
+          "Moment.js": "2.9.0",
+          "bootstrap.less": "3.4.1"
+        }
+      },
+      "Bootstrap.v3.Datetimepicker.CSS/4.17.49": {
+        "dependencies": {
+          "Moment.js": "2.9.0",
+          "bootstrap": "3.4.1"
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -413,7 +437,7 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
-      "jQuery/1.6.4": {},
+      "jQuery/1.9.1": {},
       "MessagePack/2.1.152": {
         "dependencies": {
           "MessagePack.Annotations": "2.1.152",
@@ -1947,6 +1971,7 @@
           "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {}
         }
       },
+      "Moment.js/2.9.0": {},
       "NETStandard.Library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -4972,12 +4997,40 @@
       "path": "awssdk.s3/3.7.104.16",
       "hashPath": "awssdk.s3.3.7.104.16.nupkg.sha512"
     },
+    "bootstrap/3.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rnqnZV4sFAgB240hnLRwqoUaV2DfzrYsc6PbsYzRTObrrucLZyvb+8F1yTVT1sDbXMi/NXlyRmiL6wF+d4ZJMA==",
+      "path": "bootstrap/3.4.1",
+      "hashPath": "bootstrap.3.4.1.nupkg.sha512"
+    },
     "bootstrap.chosen/1.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-gq1QwZ53xlx1mKUBbSP9+o0AVsL61g6RQ5Jia/ghXb4CurA1aJUZtoOnO77fZrSsuRNh0J7I5ct5qTu2otQUmg==",
       "path": "bootstrap.chosen/1.0.0",
       "hashPath": "bootstrap.chosen.1.0.0.nupkg.sha512"
+    },
+    "bootstrap.less/3.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G/laxBbHVHq4G7LCbfRLISrJf8wjaMsx7qpEDzAorUr+jbl66xP5Pd7IPmqAIi5u8six7/ETv9M4nU7amvbN7g==",
+      "path": "bootstrap.less/3.4.1",
+      "hashPath": "bootstrap.less.3.4.1.nupkg.sha512"
+    },
+    "Bootstrap.v3.Datetimepicker/4.17.49": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dBA3TmQCXJ7xZuxQo0IekWJog0dpuS5fgCo8Mjho4To06+pFzEOFn/qPxZ8IlxvVuwG3c3rBIXJ7dRgflsEtqg==",
+      "path": "bootstrap.v3.datetimepicker/4.17.49",
+      "hashPath": "bootstrap.v3.datetimepicker.4.17.49.nupkg.sha512"
+    },
+    "Bootstrap.v3.Datetimepicker.CSS/4.17.49": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L9cJ+BibhmOw/O40CnuOGlWpgculIszHMR6Kov1GNV8IYijI04LRWl2moSW4ByzN6+toqj3LI+3FF8ff+0YXeQ==",
+      "path": "bootstrap.v3.datetimepicker.css/4.17.49",
+      "hashPath": "bootstrap.v3.datetimepicker.css.4.17.49.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
@@ -4986,12 +5039,12 @@
       "path": "humanizer.core/2.8.26",
       "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
     },
-    "jQuery/1.6.4": {
+    "jQuery/1.9.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8RzoZQFeFYL/cINRXksLWyl8D5TKctZ/2G8hrlOLLM5OgFNI9h3t3l5tB+BBbsBUxaPUageVe0p9ruU5jrFeow==",
-      "path": "jquery/1.6.4",
-      "hashPath": "jquery.1.6.4.nupkg.sha512"
+      "sha512": "sha512-HiX9icLyiJGgiL5EOIn0d1MBPHVV2M9mzWT4mANdniDNR51RvAFTyKEXEd2+5yQJ4PJ5xePOR61Vjj/omQzYcw==",
+      "path": "jquery/1.9.1",
+      "hashPath": "jquery.1.9.1.nupkg.sha512"
     },
     "MessagePack/2.1.152": {
       "type": "package",
@@ -5538,6 +5591,13 @@
       "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+    },
+    "Moment.js/2.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4rhbvFzmgXp/gjvwjxt9Qjmdz+2CD9T99erXEDtZHlYxaI06F9A4628/Vpxklm8D9RmwJjKjp1244FwEh+a5WQ==",
+      "path": "moment.js/2.9.0",
+      "hashPath": "moment.js.2.9.0.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",

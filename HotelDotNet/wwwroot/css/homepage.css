@@ -2,8 +2,8 @@
     font-family: 'Poppins', sans-serif;
 }
 .container-homepage {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 130px;
+    padding-right: 130px;
     margin-top: 90px;
     z-index: 1;
 }
@@ -27,10 +27,10 @@ img {
 }
 .image-grid {
     --gap: 29px;
-    --num-cols: 4;
+    --num-cols: 6;
     --row-height: 230px;
     box-sizing: border-box;
-    padding: var(--gap);
+
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
@@ -206,4 +206,108 @@ img {
         display: inline-block;
         width: 24px;
         text-align: center;
+    }
+.booking-container{
+    height: 600px;
+    margin-bottom: 50px;
+}
+.booking-container-left {
+    border: solid #e0e0e0 1px;
+    border-radius: 20px;
+    height: 100%;
+   
+}
+.booking-container-right {
+    margin-left: 50px;
+    height: 100%;
+    margin-top: 70px;
+}
+.booking-container-right >img {
+   height: 450px;
+   width: 100%;
+}
+.title-booking-left {
+    color: #152C5B;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 10px;
+    line-height: 40px;
+}
+fieldset {
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    position: relative;
+}
+    fieldset > legend {
+        font-size: 14px;
+        color: #152C5B
+    }
+
+fieldset, input[type="button"] {
+    border: 0;
+}
+
+input[type="button"] {
+   position: absolute;
+    color: #fff;
+    cursor: pointer;
+    width: 69px;
+  
+    border-radius: 10px;
+    height: 45px;
+}
+.decrease-button{
+    left: 0px;
+  
+    background-color: red;
+}
+.increase-button {
+    right: 0px;
+    background-color: #1ABC9C;
+}
+.date-picker-icon {
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    width: 69px;
+    border-radius: 10px;
+    height: 45px;
+    left: 0px;
+    top: 30px;
+    font-size: 20px;
+    background-color: #152C5B;
+    border: 0;
+    
+}
+input[type="text"] {
+    height: 45px;
+    width: 100%;
+    background-color: #F5F6F8;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    border: none;
+}
+.input-booking-location {
+    height: 45px;
+    width: 100%;
+    background-color: #F5F6F8;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+.button-survey-hotel {
+    height: 45px;
+    width: 100%;
+    background-color: #3252DF;
+    color: white;
+    text-align: center;
+   
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: linear 0.15s
+}
+    .button-survey-hotel:hover {
+        box-shadow: 5px 4px 23px 0px rgba(50,82,223,0.58);
     }

@@ -1,43 +1,81 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<h1>New branch</h1>
-<div class="image-grid">
-    <a class="image-grid-col-2 image-grid-row-2 img-homepage">
-        <span class="notify-badge">20$ perday</span>
-        <div class="title-badge-container">
-            <span>Title Name Here</span>
-            </div> 
-        <img class="" src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
-    </a>
-    <a class="img-homepage">
-        <span class="notify-badge">20$ perday</span>
-        <div class="title-badge-container">
-            <span>Title Name Here</span>
-        </div>
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
-    </a>
-    <a class="img-homepage">
-        <span class="notify-badge">20$ perday</span>
-        <div class="title-badge-container">
-            <span>Title Name Here</span>
-        </div>
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
-    </a>
-    <a class="img-homepage">
-        <span class="notify-badge">20$ perday</span>
-        <div class="title-badge-container">
-            <span>Title Name Here</span>
-        </div>
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
-    </a>
-    <a class="img-homepage">
-        <span class="notify-badge">20$ perday</span>
-        <div class="title-badge-container">
-            <span>Title Name Here</span>
-        </div>
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
-    </a>
-  
+<div class="row booking-container">
+    <div class="col booking-container-left">
+        <h1 class="title-booking-left">
+            Forget Busy Work,
+            Start Next Vacation
+        </h1>
+        <form asp-action="FindHotel                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 n">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <fieldset>
+                <legend>How long you stay</legend>
+                <input type="button" value="-" class="decrease-button" />
+                <input type="text" id="input-booking-stay" value="0" />
+                <input type="button" value="+" class="increase-button" />
+            </fieldset>
+            <fieldset>
+                <legend>How many people:</legend>
+                <input type="button" value="-" class="decrease-button" />
+                <input type="text" id="input-booking-people" value="0" />
+                <input type="button" value="+" class="increase-button" />
+            </fieldset>
+            <fieldset>
+                <legend>Location</legend>
+                <select asp-items="@ViewBag.Location" class="form-select input-booking-location">
+                    <option>Select Location</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Pick a Date</legend>
+                <button type="button" class="date-picker-icon"><i class="fas fa-calendar-alt"></i></button>
+                <input type="text" class="form-control datepicker"  />
+            </fieldset>
+            </br>
+            <button type="submit" class="button-survey-hotel">Survey Avaiable Hotel</button>
+        </form>
+    </div>
+    <div class="col booking-container-right">
+        <img src="/img/banner.png" />
+    </div>
 </div>
+    <div class="image-grid">
+        <a class="image-grid-col-2 image-grid-row-2 img-homepage">
+            <span class="notify-badge">20$ perday</span>
+            <div class="title-badge-container">
+                <span>Title Name Here</span>
+            </div>
+            <img class="" src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
+        </a>
+        <a class="img-homepage image-grid-col-2">
+            <span class="notify-badge">20$ perday</span>
+            <div class="title-badge-container">
+                <span>Title Name Here</span>
+            </div>
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
+        </a>
+        <a class="img-homepage image-grid-col-2">
+            <span class="notify-badge">20$ perday</span>
+            <div class="title-badge-container">
+                <span>Title Name Here</span>
+            </div>
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
+        </a>
+        <a class="img-homepage image-grid-col-2">
+            <span class="notify-badge">20$ perday</span>
+            <div class="title-badge-container">
+                <span>Title Name Here</span>
+            </div>
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
+        </a>
+        <a class="img-homepage image-grid-col-2">
+            <span class="notify-badge">20$ perday</span>
+            <div class="title-badge-container">
+                <span>Title Name Here</span>
+            </div>
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
+        </a>
+
+    </div>
 

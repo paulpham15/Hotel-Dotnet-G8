@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="~/css/homepage.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HotelDotNet.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap" rel="stylesheet" />
@@ -26,7 +27,7 @@
                 <span class="brand-title hide-menu m-l-5"><span style="color: black;">G8</span>Booking</span>
             </a>
         </div>
-       
+
         <div class="nav-homepage">
             <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
             <a class="nav-link" asp-area="" asp-controller="HotelExplore" asp-action="Index">Hotel</a>
@@ -49,7 +50,7 @@
 
 
                     <div class="user-dropdown">
-                  
+
                         <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="dropdown-item"><span class="mr-3"><i class="fa fa-user"></i></span> Dashboard</a>
                         <a href="#" class="dropdown-item"><span class="mr-3"><i class="fa fa-building"></i></span> Profile</a>
                         <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "HomePage", new { area = "" })">
@@ -151,11 +152,10 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
     <script>$(function () {
             $('.table').DataTable();
-            $(".datepicker").datepicker({
-                dateFormat: "yy-mm-dd"
-            });
+
         });</script>
     <script>const links = document.querySelectorAll('.nav-link');
 

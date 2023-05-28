@@ -114,7 +114,7 @@ img {
     flex: 1;
 }
 .header-homepage {
-    z-index: 100;
+    z-index: 50;
     display: flex;
     align-content: flex-start;
     flex-direction: row;
@@ -129,7 +129,7 @@ img {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .header-homepage div {
-   margin-top: 20px;
+   
 }
     .header-homepage nav {
         margin-top: 20px;
@@ -143,6 +143,7 @@ img {
     height: 37px;
     max-width: 200px;
     width: 130px;
+    margin-top: 15px;
 }
     .btn-login:hover {
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;

@@ -5,6 +5,17 @@
     padding-left: 50px;
     padding-right: 50px;
     margin-top: 90px;
+    z-index: 1;
+}
+
+#main-wrapper, #main-content {
+    display: flex;
+    flex: 1;
+}
+
+#main-wrapper {
+    height: 100%;
+    width: 100%;
 }
 img {
     border-radius: 20px;
@@ -79,3 +90,120 @@ img {
         --row-height: 200px;
     }
 }
+#main-top-bar {
+    top:0;
+    height: 70px;
+    position: fixed;
+    min-height: 70px;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: white;
+    padding-left: 10rem;
+    
+}
+
+.shape {
+    width: 40%;
+    height: 70px;
+    -webkit-clip-path: polygon(94% 0, 100% 26%, 100% 100%, 0 100%, 22% 0);
+    clip-path: polygon(94% 0, 100% 26%, 100% 100%, 0 100%, 22% 0);
+    background: #673AB7;
+    background: linear-gradient(90deg, #6740B4, #892FC4);
+}
+
+.main-logo {
+    background: url(https://rolecalljobs.com/img/RoleCall_WhiteLogo.svg) no-repeat;
+    width: 140px;
+    height: 55px;
+}
+
+.user-dropdown, .user-menu {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.user-menu {
+    height: 70px;
+    padding: 0 1rem;
+    top: 0;
+    z-index: 10;
+}
+
+    .user-menu:hover {
+        background-color: transparent;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+.user-menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user-image-wrapper {
+    height: 70px;
+    background-color: transparent;
+    z-index: 20;
+}
+
+.user-image {
+    display: inline-block;
+    margin-top: 14px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-name-wrapper {
+    padding-left: 1rem;
+}
+
+    .user-name-wrapper i {
+        padding: 0 0.3rem;
+    }
+
+.user-menu.show {
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+    .user-menu.show .user-dropdown {
+        box-shadow: -2px 4px 7px #ccc;
+        display: block;
+    }
+
+.user-dropdown {
+    position: absolute;
+    top: 70px;
+    display: none;
+    right: 0;
+    width: 220px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    color: #000;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+    .dropdown-item:active, .dropdown-item:hover {
+        background-color: #EBF5FF;
+    }
+
+    .dropdown-item span {
+        color: #03A9FA;
+        display: inline-block;
+        width: 24px;
+        text-align: center;
+    }

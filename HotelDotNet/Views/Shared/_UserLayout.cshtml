@@ -20,47 +20,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header class="header-homepage">
-        <div class="logo-home">
-            <a asp-area="" asp-controller="HomePage" asp-action="Index">
+    <div id="main-top-bar">
+        <div style="flex: 1">
+            <a asp-area="" asp-controller="HomePage" asp-action="Index" style="margin-top: 20px;">
                 <span class="brand-title hide-menu m-l-5"><span style="color: black;">G8</span>Booking</span>
             </a>
         </div>
-        <nav class="nav-homepage">
-
+       
+        <div class="nav-homepage">
             <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
             <a class="nav-link" asp-area="" asp-controller="HotelExplore" asp-action="Index">Hotel</a>
             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Explore</a>
-        </nav>
-        <div class="nav-login">
+        </div>
+        <div class="user-menu">
             @if (SignInManager.IsSignedIn(User))
             {
                 if (User.IsInRole("Admin"))
                 {
-                    <span>Hello Admin &nbsp </span>
 
-                    <a class="btn btn-login" style="width: 180px;" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Go to Dashboard</a>
+                    <div class="user-menu-item">
+                        <div class="user-image-wrapper">
+                            <img class="user-image" src="https://media.istockphoto.com/id/1337144146/vector/default-avatar-profile-icon-vector.jpg?s=612x612&w=0&k=20&c=BIbFwuv7FxTWvh5S3vB6bkT0Qv8Vn8N5Ffseq84ClGI=">
+                        </div>
+                        <div class="user-name-wrapper">
+                            @User.Identity.Name <i class="fa fa-caret-down"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="user-dropdown">
+                  
+                        <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="dropdown-item"><span class="mr-3"><i class="fa fa-user"></i></span> Dashboard</a>
+                        <a href="#" class="dropdown-item"><span class="mr-3"><i class="fa fa-building"></i></span> Profile</a>
+                        <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "HomePage", new { area = "" })">
+                            <button href="#" type="submit" class="dropdown-item"><span class="mr-3"><i class="fa fa-power-off"></i></span> Logout</button>
+                        </form>
+                    </div>
                 }
                 else
                 {
-        
-           
-            <form  asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "HomePage", new { area = "" })">
-                <a>Hello @User.Identity.Name</a>
-                <button type="submit" class="btn btn-login">Log Out</button>
-            </form>
-       
-                 
-                   
+                    <div class="user-menu-item">
+                        <div class="user-image-wrapper">
+                            <img class="user-image" src="https://media.istockphoto.com/id/1337144146/vector/default-avatar-profile-icon-vector.jpg?s=612x612&w=0&k=20&c=BIbFwuv7FxTWvh5S3vB6bkT0Qv8Vn8N5Ffseq84ClGI=">
+                        </div>
+                        <div class="user-name-wrapper">
+                            @User.Identity.Name <i class="fa fa-caret-down"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="user-dropdown">
+
+                        <a href="#" class="dropdown-item"><span class="mr-3"><i class="fa fa-building"></i></span> Profile</a>
+                        <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "HomePage", new { area = "" })">
+                            <button href="#" type="submit" class="dropdown-item"><span class="mr-3"><i class="fa fa-power-off"></i></span>Logout</button>
+                        </form>
+
+                    </div>
                 }
+
             }
             else
-            {
-        <a class="btn btn-login"  asp-area="Identity" asp-page="/Account/Login">Login/Signup</a>
-            }
-
+            { <a class="btn btn-login" asp-area="Identity" asp-page="/Account/Login">Login/Signup</a>}
         </div>
-    </header>
+        <div style="flex: 1"></div>
+    </div>
     <div class="container-homepage">
         <main role="main" class="pb-3">
             @RenderBody()

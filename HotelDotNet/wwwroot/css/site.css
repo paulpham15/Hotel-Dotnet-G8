@@ -176,3 +176,26 @@ img {
 .placeholder {
     background-color: transparent !important;
 }
+.btn-logout {
+    width: 43px;
+    height: 43px;
+    border: solid 1px #ffff;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 10px;
+    background-color: transparent;
+    transition: ease-in-out .1s
+}
+
+    .btn-logout:hover {
+        background-color: white;
+    }
+
+    .btn-logout > i {
+        color: white;
+        font-size: 15px;
+    }
+
+    .btn-logout:hover > i {
+        color: black;
+    }

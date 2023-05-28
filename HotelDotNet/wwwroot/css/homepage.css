@@ -90,6 +90,13 @@ img {
         --row-height: 200px;
     }
 }
+.title-content{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #152C5B;
+    margin-top: 50px;
+}
 #main-top-bar {
     top:0;
     height: 70px;
@@ -209,7 +216,7 @@ img {
     }
 .booking-container{
     height: 600px;
-    margin-bottom: 50px;
+   
 }
 .booking-container-left {
     border: solid #e0e0e0 1px;
@@ -311,3 +318,7 @@ input[type="text"] {
     .button-survey-hotel:hover {
         box-shadow: 5px 4px 23px 0px rgba(50,82,223,0.58);
     }
+.image-slider{
+    width: 263px;
+    height: 184px;
+}

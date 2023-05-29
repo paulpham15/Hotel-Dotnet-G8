@@ -7,8 +7,10 @@ namespace HotelDotNet.Contracts
     public interface IHotelRespository : IGenericRepository<Hotel>
 	{
 		Task<HotelRoomsVM> GetHotelDetails(int? id);
-        Task<List<HotelVM>> GetPopularHotel(int number);
-        Task<List<HotelVM>> GetHotelWithLocalte(string locate);
+        Task<List<HotelListVM>> GetPopularHotel(int number);
+        Task<List<HotelListVM>> GetHotelWithKingBed();
+        Task<List<HotelListVM>> GetHotelMostPicked();
+        Task<List<HotelListVM>> GetHotelWithLocalte(string locate);
     }
 }
 

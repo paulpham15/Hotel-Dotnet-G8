@@ -1,5 +1,6 @@
 ﻿using System;
 using AutoMapper;
+using AutoMapper.Execution;
 using HotelDotNet.Contracts;
 using HotelDotNet.Data;
 using HotelDotNet.Models;
@@ -29,16 +30,49 @@ namespace HotelDotNet.Respositories
             
             return hotelRoomAllocationVM;
         }
-        public async Task<List<HotelVM>> GetPopularHotel(int number)
+        public async Task<List<HotelListVM>> GetPopularHotel(int number)
         {
-            var popularHotel = context.Hotels.Where(q => q.Rating >= 3).Take(number).ToListAsync();
-            var HotelPopularVM = mapper.Map<List<HotelVM>>(popularHotel);
+           var HotelPopularVM = new List<HotelListVM>();
+            var popularHotel = await context.Hotels.Where(q => q.Rating >= 3).Take(number).ToListAsync();
+            foreach (var hotel in popularHotel)
+            {
+                var Price = context.RoomAllocations.Where(q => q.HotelId == hotel.Id).Min(x => x.Price);
+                HotelPopularVM.Add(new HotelListVM
+                {
+                    Name = hotel.Name,
+                    Description = hotel.Description,
+                    HotelPicture = hotel.HotelPicture,
+                    PricePerDay = Price,
+                    Location = hotel.Location,
+                    NumberOfBooking = hotel.NumberOfBooking,
+                    Rating = hotel.Rating
+                    
+
+                });
+            };
             return HotelPopularVM;
         }
-        public async Task<List<HotelVM>> GetHotelWithLocalte(string locate)
+        public async Task<List<HotelListVM>> GetHotelMostPicked()
+        {
+            var mosPickHotel = await context.Hotels.Where(q => q.NumberOfBooking >= 10).ToListAsync();
+            var HotelMosPickedVM = mapper.Map<List<HotelListVM>>(mosPickHotel);
+            return HotelMosPickedVM;
+        }
+        public async Task<List<HotelListVM>> GetHotelWithKingBed()
+        {
+
+            var RoomFacials = context.RoomFacilities.Where(q => q.FacilitiesId == 2).Select(x => x.RoomAllocationId);
+            var roomAllocations = context.RoomAllocations.Where(q => RoomFacials.Contains(q.Id)).Select(x => x.HotelId);
+            var HotelWithBed =await context.Hotels.Where(q => roomAllocations.Contains(q.Id)).ToListAsync();
+
+
+            var HotelWithBedVM = mapper.Map<List<HotelListVM>>(HotelWithBed);
+            return HotelWithBedVM;
+        }
+        public async Task<List<HotelListVM>> GetHotelWithLocalte(string locate)
         {
             var hotelLocate = context.Hotels.Where(q => q.Location == locate).ToListAsync();
-            var HotelLocalVM = mapper.Map<List<HotelVM>>(hotelLocate);
+            var HotelLocalVM = mapper.Map<List<HotelListVM>>(hotelLocate);
             return HotelLocalVM;
         }
     }

@@ -81,7 +81,9 @@ namespace HotelDotNet.Controllers
                     Description = hotelVm.Description,
                     HotelPicture = hotelVm.ImageUrl,
                     Rating = hotelVm.Rating,
-                    Location = hotelVm.Location
+                    Location = hotelVm.Location,
+                    NumberOfBooking= 0,
+                    hotelAvail = HotelAvail.Available,
                 };
                 await hotelRespository.AddAsync(hotel);
                 return RedirectToAction(nameof(Index));

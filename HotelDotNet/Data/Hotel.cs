@@ -15,7 +15,11 @@ namespace HotelDotNet.Data
 		public string? Description { get; set; }
 		
 		public string? HotelPicture { get; set; }
-	
+
+		public int? NumberOfBooking { get; set; }
+
+		public HotelAvail hotelAvail { get; set; }
+
     }
 	public enum HotelAvail : int
 	{

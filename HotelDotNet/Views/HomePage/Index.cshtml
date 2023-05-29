@@ -1,4 +1,5 @@
-﻿@{
+﻿@model HomePageListVM
+@{
     ViewData["Title"] = "Home Page";
 }
 <div class="row booking-container">
@@ -42,67 +43,82 @@
 </div>
 <p class="title-content">Most Picked</p>
 <div class="image-grid">
-    <a class="image-grid-col-2 image-grid-row-2 img-homepage">
-        <span class="notify-badge">20$ perday</span>
-        <div class="title-badge-container">
-            <span>Title Name Here</span>
-        </div>
-        <img class="" src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
-    </a>
-    <a class="img-homepage image-grid-col-2">
-        <span class="notify-badge">20$ perday</span>
-        <div class="title-badge-container">
-            <span>Title Name Here</span>
-        </div>
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
-    </a>
-    <a class="img-homepage image-grid-col-2">
-        <span class="notify-badge">20$ perday</span>
-        <div class="title-badge-container">
-            <span>Title Name Here</span>
-        </div>
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
-    </a>
-    <a class="img-homepage image-grid-col-2">
-        <span class="notify-badge">20$ perday</span>
-        <div class="title-badge-container">
-            <span>Title Name Here</span>
-        </div>
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
-    </a>
-    <a class="img-homepage image-grid-col-2">
-        <span class="notify-badge">20$ perday</span>
-        <div class="title-badge-container">
-            <span>Title Name Here</span>
-        </div>
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="architecture">
-    </a>
+    @foreach (HotelListVM popularHotel in Model.PopularList)
+        {
+            if (popularHotel == Model.PopularList.First())
+            {
 
+
+<a class="image-grid-col-2 image-grid-row-2 img-homepage">
+                @if(@popularHotel.PricePerDay != null)
+                        {
+                                                <span class="notify-badge">@popularHotel.PricePerDay$ Per Day</span>
+                        }
+                
+<div class="title-badge-container">
+    <span>@popularHotel.Name</span>
+    <br />
+    <span style="font-weight: 400;font-size:14px;">@popularHotel.Location</span>
 </div>
+                @if (@popularHotel.HotelPicture != null && @popularHotel.HotelPicture.Length >0)
+                    {
+                    <img class="" src="@popularHotel.HotelPicture" alt="architecture">
+                    }
+                    else
+                    {
+                    <img class="" src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930" alt="architecture">
+                    }
+
+
+
+            </a>
+            }
+            else
+            {
+<a class="img-homepage image-grid-col-2">
+    @if (@popularHotel.PricePerDay != null)
+        {
+        <span class="notify-badge">@popularHotel.PricePerDay$ Per Day</span>
+        }
+
+<div class="title-badge-container">
+    <span>@popularHotel.Name</span>
+    <br />
+    <span style="font-weight: 400;font-size:14px;">@popularHotel.Location</span>
+</div>
+    @if (@popularHotel.HotelPicture != null && @popularHotel.HotelPicture.Length > 0)
+    {
+        <img class="" src="@popularHotel.HotelPicture" alt="architecture">
+    }
+    else
+    {
+        <img class="" src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930" alt="architecture">
+    }
+</a>
+            }
+        }
+    
+
+    </div>
 <p class="title-content">Have King Bed</p>
+
 <section class="vertical-center-3 slider">
-    <div>
-        <img class="image-slider" src="https://www.ghi888.com/wp-content/uploads/2020/01/6-Growing-strong-Widus-Hotel-Casino-is-a-standout-example-of-just-how-far-Clarks-casino-industry-has-come-in-less-than-a-decade.jpg">
-    </div>
-    <div>
-        <img class="image-slider" src="https://www.ghi888.com/wp-content/uploads/2020/01/6-Growing-strong-Widus-Hotel-Casino-is-a-standout-example-of-just-how-far-Clarks-casino-industry-has-come-in-less-than-a-decade.jpg">
-    </div>
-    <div>
-        <img class="image-slider" src="https://www.ghi888.com/wp-content/uploads/2020/01/6-Growing-strong-Widus-Hotel-Casino-is-a-standout-example-of-just-how-far-Clarks-casino-industry-has-come-in-less-than-a-decade.jpg">
-    </div>
-    <div>
-        <img class="image-slider" src="https://www.ghi888.com/wp-content/uploads/2020/01/6-Growing-strong-Widus-Hotel-Casino-is-a-standout-example-of-just-how-far-Clarks-casino-industry-has-come-in-less-than-a-decade.jpg">
-    </div>
-    <div>
-        <img class="image-slider" src="http://placehold.it/263x184?text=5">
-    </div>
-    <div>
-        <img class="image-slider" src="http://placehold.it/263x184?text=6">
-    </div>
-    <div>
-        <img class="image-slider" src="http://placehold.it/263x184?text=7">
-    </div>
+    @foreach (var hotelKingBed in Model.HotelBedList)
+    {
+        <div>
+            @if (hotelKingBed.HotelPicture != null && hotelKingBed.HotelPicture.Length > 0)
+            {
+                <img class="image-slider" src="@hotelKingBed.HotelPicture">
+            }
+            else
+            {
+                <img class="image-slider" src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930">
+            }
+
+        </div>
+    }
    
+
 </section>
 
 

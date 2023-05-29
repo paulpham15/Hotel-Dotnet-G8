@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HotelDotNet.Contracts;
 using HotelDotNet.Data;
+using HotelDotNet.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -15,17 +17,26 @@ namespace HotelDotNet.Controllers
     public class HomePageController : Controller
     {
         private readonly ApplicationDbContext context;
+        private readonly IHotelRespository hotelRespository;
 
-        public HomePageController(ApplicationDbContext context)
+        public HomePageController(ApplicationDbContext context, IHotelRespository hotelRespository)
         {
             this.context = context;
+            this.hotelRespository = hotelRespository;
         }
 
         // GET: /<controller>/
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             ViewBag.Location = new SelectList(context.Locations, "Name", "Name");
-            return View();
+            List<HotelListVM> popularHotel = await hotelRespository.GetPopularHotel(5);
+            List<HotelListVM> bedKingHotel = await hotelRespository.GetHotelWithKingBed();
+            var model = new HomePageListVM
+            {
+                PopularList = popularHotel,
+                HotelBedList= bedKingHotel,
+            };
+            return View(model);
          
         }
     }

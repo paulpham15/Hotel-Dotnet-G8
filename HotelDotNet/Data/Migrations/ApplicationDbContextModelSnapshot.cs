@@ -233,7 +233,13 @@ namespace HotelDotNet.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("NumberOfBooking")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int?>("Rating")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("hotelAvail")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
@@ -553,7 +559,7 @@ namespace HotelDotNet.Data.Migrations
                         {
                             Id = "408aa945-3d84-4421-8342-7269ec64d949",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8352e79f-74d0-4aa3-b318-48a4f639cf4b",
+                            ConcurrencyStamp = "dedf4176-bdf9-43b5-8672-2e8ce4d0e426",
                             Email = "admin@localhost.com",
                             EmailConfirmed = true,
                             Firstname = "System",
@@ -561,9 +567,9 @@ namespace HotelDotNet.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEOArP248mhmPC/PkOlZjKVam8M+xlbS9WGd33Fbkpy2wRvL8DH/m6o4AOHUIwiUOeA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEAgKyu11mKuoX5kOuUZAMcfapgsG8oDsI5AXNLYOlAaSrGujO6mshEwEFuA4x6M3Mw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "31de5ef8-1c61-4639-aead-dd7eef1fe9ad",
+                            SecurityStamp = "d92f93bf-c602-4b93-b2f2-a4afb8143611",
                             TwoFactorEnabled = false,
                             UserName = "admin@localhost.com"
                         },
@@ -571,7 +577,7 @@ namespace HotelDotNet.Data.Migrations
                         {
                             Id = "3f4631bd-f907-4409-b416-ba356312e659",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0961f3af-cb89-466a-b59e-8a29ff324cb6",
+                            ConcurrencyStamp = "74697f20-d3c8-41c7-b429-be6bc01c47da",
                             Email = "user@localhost.com",
                             EmailConfirmed = true,
                             Firstname = "System",
@@ -579,9 +585,9 @@ namespace HotelDotNet.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LOCALHOST.COM",
                             NormalizedUserName = "USER@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEA1gL+1aeXQEGS2w68ib4+lXVt3xA5rJ/pr9jLAhxAWfRVV28qvjVRu581/23Kc4LQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPcG1Q2wP2xn7OaeGbfqiqp2Xt7XkMdAlkf9xnEo9oKB2QXA3Rdl16FAVmXOd4anmg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "7c9f2fa3-2b52-48a4-ba79-b97badc30dda",
+                            SecurityStamp = "7b5e4703-d699-4760-ac2c-ed2232e0e375",
                             TwoFactorEnabled = false,
                             UserName = "user@localhost.com"
                         });
@@ -616,14 +622,14 @@ namespace HotelDotNet.Data.Migrations
                         new
                         {
                             Id = "cac43a6e-f7bb-4448-baaf-1add431ccbbf",
-                            ConcurrencyStamp = "c6e6c629-6d55-4aac-b478-6d011b85c35a",
+                            ConcurrencyStamp = "8a2d59c7-0651-4f80-a84f-7a15c80ac487",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "cac43a7e-f7cb-4148-baaf-1acb431eabbf",
-                            ConcurrencyStamp = "b0f3d8e1-29fc-419c-a16c-225a53f60326",
+                            ConcurrencyStamp = "005ac0fd-11c5-4fdc-847d-fd666b141de7",
                             Name = "User",
                             NormalizedName = "USER"
                         });

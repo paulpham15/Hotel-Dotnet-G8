@@ -80,9 +80,10 @@ img {
     bottom: 20px;
     left: 30px
 }
-.title-badge-container > span {
-    color: white;
-}
+    .title-badge-container > span {
+        color: white;
+        text-shadow: 1px 0px 3px rgba(0,0,0,0.51);
+    }
 /* Anything udner 1024px */
 @media screen and (max-width: 1024px) {
     .image-grid {

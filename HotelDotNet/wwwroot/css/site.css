@@ -11,6 +11,9 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+    a, a:visited, a:hover, a:active {
+        color: inherit;
+    }
 html {
   position: relative;
   min-height: 100%;

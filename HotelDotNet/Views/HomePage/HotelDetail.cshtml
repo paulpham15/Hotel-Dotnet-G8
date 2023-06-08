@@ -1,0 +1,195 @@
+﻿@model HotelRoomsVM
+@{
+    ViewData["Title"] = "Hotel " + Model.Name;
+}
+
+<div class="container">
+
+    <div class="hotel-detail-header">
+        <h1 class="hotel-detail-title">@Model.Name</h1> </br>
+        <p class="hotel-detail-location">@Model.Location</p>
+    </div>
+    <div class="hotel-detail-image-container">
+        <div class="row">
+            <div class="col">
+                <img src="@(Model.HotelPicture.Length> 0 ?Model.HotelPicture :"https://majestichotelgroup.com/web/majestic/homepage/mobile/slider/00majestic-hotel-and--spa-fachada.jpg")" />
+            </div>
+        </div>
+    </div>
+    <div class="hotel-detail-content">
+        <div class="row">
+            <div class="col-7">
+                <p style="color: #152C5B; font-size: 20px; font-weight:500; ">About the place</p>
+                <p>Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down aesthetic that exploits the use of repetition and understated development. Minimal techno is thought to have been originally developed in the early 1990s by Detroit-based producers Robert Hood and Daniel Bell.</p>
+
+                <p>Such trends saw the demise of the soul-infused techno that typified the original Detroit sound. Robert Hood has noted that he and Daniel Bell both realized something was missing from techno in the post-rave era.</p>
+                <p>Design is a plan or specification for the construction of an object or system or for the implementation of an activity or process, or the result of that plan or specification in the form of a prototype, product or process. The national agency for design: enabling Singapore to use design for economic growth and to make lives better.</p>
+                <div class="card">
+                    <div class="card__header">
+                        <h1 class="card__title">Rooms</h1>
+                    </div>
+                    <div class="room-list">
+
+                        @foreach (var item in Model.RoomAllocations)
+                        {
+
+                            <div class="room">
+                                <div class="room__info">
+                                    <div class="room__name">
+                                        <i class="fas fa-bed"></i>
+                                        <span>@item.RoomName | @item.RoomTypeString</span>
+                                    </div>
+                                    <span class="room__nb-of-people">@item.NumberOfRoom Rooms | </span>
+                                    @foreach (var faciliti in item.RoomFacilityList)
+                                    {
+
+                                        <span class="room__nb-of-people">• @faciliti.Title </span>
+                                    }
+                                </div>
+                                <div class="room__actions">
+                                    <button disabled class="button-room">@item.Price$ per day </button>
+
+                                </div>
+                            </div>
+                        }
+
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-5">
+                <div class="hotel-right">
+                    <div class="hotel-detail-form">
+                        <form asp-action="GoBooking">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <h1 class="title-booking-left" style="font-size: 20px;">
+                                Start Booking
+                            </h1>
+                            <span asp-validation-for="@Model.BookingCreate.totalprice" class="text-danger"></span>
+                            <input type="number" hidden id="input-booking-price" value="0" />
+                            <input  type="number" hidden id="input-booking-Totalprice" name="totalprice" value="0" />
+                            <input type="number" hidden name="HotelId" value="@Model.Id" />
+                            <fieldset>
+                                <legend>How many people:</legend>
+                                <input type="button" value="-" class="decrease-button" />
+                                <input asp-for="@Model.BookingCreate.people" readonly="readonly" type="number" class="input-homepage" id="input-booking-people" name="people" value="@ViewBag.People" />
+                                <input type="button" value="+" class="increase-button" />
+                                <span asp-validation-for="@Model.BookingCreate.people" class="text-danger"></span>
+                            </fieldset>
+                            <fieldset>
+                                <legend>How long you stay?</legend>
+                                <input onclick="onButtonClick(true)" type="button" value="-" class="decrease-button" />
+                                <input asp-for="@Model.BookingCreate.day" readonly="readonly" onchange="onPeoplechange(this.value)" name="numberofday" class="input-homepage" type="number" id="input-booking-stay" value="@ViewBag.Day" />
+                                <input onclick="onButtonClick(false)" type="button" value="+" class="increase-button" />
+                                <span asp-validation-for="@Model.BookingCreate.day" class="text-danger"></span>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Room Select</legend>
+                                <select asp-for="@Model.BookingCreate.totalprice" id="select-room" asp-items="@ViewBag.Rooms" name="roomId" class="form-select input-booking-location">
+                                    <option value="0">Chose Room</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Pick a Date</legend>
+                                <button type="button" class="date-picker-icon"><i class="fas fa-calendar-alt"></i></button>
+                                <input asp-for="@Model.BookingCreate.datetime" name="datetime" style="text-align:center" value="@ViewBag.DateTime" type="text" class="form-control datepicker-booking" />
+                                <span asp-validation-for="@Model.BookingCreate.datetime" class="text-danger"></span>
+                            </fieldset>
+                            <div class="text-paid"> <span>You will pay <span style="color:#152C5B; font-weight: 500">$</span><span id="price-hotel" style="color:#152C5B; font-weight: 500">0</span> USD per <span id="day-hotel" style="color:#152C5B; font-weight: 500">@ViewBag.Day</span> day</span></div>
+
+                            <button type="submit" class="button-survey-hotel">Continue to Book</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row story-container" data-aos-offset="300"
+         data-aos-easing="ease-in-sine" data-aos="zoom-in">
+        <div class="col-4"> <img src="/img/story-banner.png" /></div>
+        <div class="col-8 story-container-left">
+            <p class="story-title">Happy Family</p>
+            <div>
+                <i class="fas fa-star" style="color: #FFCC47; font-size: 20px;"></i>
+                <i class="fas fa-star" style="color: #FFCC47; font-size: 20px;"></i>
+                <i class="fas fa-star" style="color: #FFCC47; font-size: 20px;"></i>
+                <i class="fas fa-star" style="color: #FFCC47; font-size: 20px;"></i>
+                <i class="fas fa-star" style="color: #FFCC47; font-size: 20px;"></i>
+            </div>
+            <p class="story-main-title">
+                What a great trip with my family and
+                I should try again next time soon ...
+            </p>
+            <button type="submit" class="button-survey-hotel" style="width: 210px;">Read Their Story</button>
+        </div>
+    </div>
+</div>
+@section scripts{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>$("select").on("change", function () {
+            var day = $("#input-booking-stay").val();
+            var roomID = $("#select-room").find(":selected").val();
+
+            $.ajax({
+                type: 'get',
+                url: '/HomePage/GetPriceHotel',
+                data: {
+                    RoomId: roomID,
+
+                },
+                success: function (result) {
+                    if (result.items[0] != null) {
+                        $("#input-booking-price").val(result.items[0])
+                        $("#input-booking-Totalprice").val(result.items[0] * day)
+                        document.getElementById("price-hotel").innerText = (result.items[0] * day);
+                    } else {
+                        $("#input-booking-price").val(0)
+                        $("#input-booking-Totalprice").val(0)
+                        document.getElementById("price-hotel").innerText = (result.items[0] * day);
+                    }
+                  
+                }
+            })
+        })</script>
+}
+<script>function showChange(el) {
+
+        var priceHotel = $('#input-booking-price').val();
+        console.log(priceHotel);
+        var day = document.getElementById("input-booking-stay").value
+    if (day > 0 && priceHotel!=null) {
+            document.getElementById("price-hotel").innerText = (priceHotel * day);
+            $('#input-booking-price').val(priceHotel * day)
+        }
+
+
+    }
+    function onButtonClick(decrease) {
+        var dayInput = document.getElementById("input-booking-stay").value;
+        var price = $('#input-booking-price').val();
+        const parsed = parseInt(dayInput);
+        document.getElementById("day-hotel").innerText = decrease ? parsed - 1 : parsed + 1
+        var newDay = decrease ? parsed - 1 : parsed + 1
+        document.getElementById("price-hotel").innerText = (price * newDay);
+        $('#input-booking-Totalprice').val(price * newDay);
+        console.log(decrease ? parsed - 1 : parsed + 1, price);
+    }
+    function onPeoplechange(val) {
+        //var selected_vehicle = el.options[el.selectedIndex].value;
+        //var day = document.getElementById("input-booking-stay").value
+        //document.getElementById("price-hotel").innerText = (selected_vehicle * day);
+        console.log(val)
+        document.getElementById("day-hotel").innerText = val
+
+    }
+    //document.getElementById('select-room').onchange = function () {
+    //    var spanToChance = document.getElementById("price-hotel");
+    //    var newvalue = this.value;
+
+    //    console.log(newvalue);
+    //    spanToChange.textContent = "hahaha";
+    //};</script>

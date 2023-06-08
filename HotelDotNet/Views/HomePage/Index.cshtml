@@ -8,30 +8,30 @@
             Forget Busy Work,
             Start Next Vacation
         </h1>
-        <form asp-action="FindHotel                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 n">
+        <form asp-controller="HomePage" asp-action="FindHotel">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <fieldset>
                 <legend>How long you stay</legend>
                 <input type="button" value="-" class="decrease-button" />
-                <input type="text" id="input-booking-stay" value="0" />
+                <input  readonly="readonly" type="text" id="input-booking-stay" class="input-homepage" value="0" name="day" />
                 <input type="button" value="+" class="increase-button" />
             </fieldset>
             <fieldset>
                 <legend>How many people:</legend>
                 <input type="button" value="-" class="decrease-button" />
-                <input type="text" id="input-booking-people" value="0" />
+                <input  readonly="readonly" type="text" class="input-homepage" id="input-booking-people" name="people" value="0" />
                 <input type="button" value="+" class="increase-button" />
             </fieldset>
             <fieldset>
                 <legend>Location</legend>
-                <select asp-items="@ViewBag.Location" class="form-select input-booking-location">
+                <select asp-items="@ViewBag.Location" name="SearchString" class="form-select input-booking-location">
                     <option>Select Location</option>
                 </select>
             </fieldset>
             <fieldset>
                 <legend>Pick a Date</legend>
-                <button type="button" class="date-picker-icon"><i class="fas fa-calendar-alt"></i></button>
-                <input type="text" class="form-control datepicker" />
+                <button readonly="readonly" type="button" class="date-picker-icon"><i class="fas fa-calendar-alt"></i></button>
+                <input name="datetime" type="text" class="form-control datepicker input-homepage" />
             </fieldset>
             </br>
             <button type="submit" class="button-survey-hotel">Survey Avaiable Hotel</button>
@@ -41,84 +41,135 @@
         <img src="/img/banner.png" />
     </div>
 </div>
-<p class="title-content">Most Picked</p>
-<div class="image-grid">
+<p class="title-content" data-aos="fade-left">Most Picked</p>
+<div class="image-grid" data-aos="fade-left">
     @foreach (HotelListVM popularHotel in Model.PopularList)
+    {
+        if (popularHotel == Model.PopularList.First())
         {
-            if (popularHotel == Model.PopularList.First())
-            {
 
 
-<a class="image-grid-col-2 image-grid-row-2 img-homepage">
-                @if(@popularHotel.PricePerDay != null)
-                        {
-                                                <span class="notify-badge">@popularHotel.PricePerDay$ Per Day</span>
-                        }
-                
-<div class="title-badge-container">
-    <span>@popularHotel.Name</span>
-    <br />
-    <span style="font-weight: 400;font-size:14px;">@popularHotel.Location</span>
-</div>
-                @if (@popularHotel.HotelPicture != null && @popularHotel.HotelPicture.Length >0)
-                    {
+            <a asp-controller="Homepage" asp-action="HotelDetail" asp-route-id="@popularHotel.Id" class="image-grid-col-2 image-grid-row-2 img-homepage">
+                @if (@popularHotel.PricePerDay != null)
+                {
+                    <span class="notify-badge">@popularHotel.PricePerDay$ Per Day</span>
+                }
+
+                <div class="title-badge-container">
+                    <span>@popularHotel.Name</span>
+                    <br />
+                    <span style="font-weight: 400;font-size:14px;">@popularHotel.Location</span>
+                </div>
+                @if (@popularHotel.HotelPicture != null && @popularHotel.HotelPicture.Length > 0)
+                {
                     <img class="" src="@popularHotel.HotelPicture" alt="architecture">
-                    }
-                    else
-                    {
+                }
+                else
+                {
                     <img class="" src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930" alt="architecture">
-                    }
+                }
 
 
 
             </a>
-            }
-            else
-            {
-<a class="img-homepage image-grid-col-2">
-    @if (@popularHotel.PricePerDay != null)
+        }
+        else
         {
-        <span class="notify-badge">@popularHotel.PricePerDay$ Per Day</span>
-        }
+            <a asp-controller="Homepage" asp-action="HotelDetail" asp-route-id="@popularHotel.Id" class="img-homepage image-grid-col-2">
+                @if (@popularHotel.PricePerDay != null)
+                {
+                    <span class="notify-badge">@popularHotel.PricePerDay$ Per Day</span>
+                }
 
-<div class="title-badge-container">
-    <span>@popularHotel.Name</span>
-    <br />
-    <span style="font-weight: 400;font-size:14px;">@popularHotel.Location</span>
+                <div class="title-badge-container">
+                    <span>@popularHotel.Name</span>
+                    <br />
+                    <span style="font-weight: 400;font-size:14px;">@popularHotel.Location</span>
+                </div>
+                @if (@popularHotel.HotelPicture != null && @popularHotel.HotelPicture.Length > 0)
+                {
+                    <img class="" src="@popularHotel.HotelPicture" alt="architecture">
+                }
+                else
+                {
+                    <img class="" src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930" alt="architecture">
+                }
+            </a>
+        }
+    }
+
+
 </div>
-    @if (@popularHotel.HotelPicture != null && @popularHotel.HotelPicture.Length > 0)
-    {
-        <img class="" src="@popularHotel.HotelPicture" alt="architecture">
-    }
-    else
-    {
-        <img class="" src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930" alt="architecture">
-    }
-</a>
-            }
-        }
-    
+<p class="title-content" data-aos="fade-right">Have King Bed</p>
 
-    </div>
-<p class="title-content">Have King Bed</p>
-
-<section class="vertical-center-3 slider">
+<section class="vertical-center-3 slider " data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos="fade-right">
     @foreach (var hotelKingBed in Model.HotelBedList)
     {
         <div>
             @if (hotelKingBed.HotelPicture != null && hotelKingBed.HotelPicture.Length > 0)
             {
-                <img class="image-slider" src="@hotelKingBed.HotelPicture">
+                    <a asp-controller="Homepage" asp-action="HotelDetail" asp-route-id="@hotelKingBed.Id">
+                        <img class="image-slider" src="@hotelKingBed.HotelPicture">
+                        <p>@hotelKingBed.Name</p>
+                        <p>@hotelKingBed.Location</p>
+                     </a>
+               
             }
             else
             {
-                <img class="image-slider" src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930">
+        <a asp-controller="Homepage" asp-action="HotelDetail" asp-route-id="@hotelKingBed.Id">
+            <img class="image-slider" src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930">
+            <p class="hotel-slider-title">@hotelKingBed.Name</p>
+            <p class="hotel-slider-location">@hotelKingBed.Location</p>
+        </a>
+                
             }
 
         </div>
     }
-   
+
+
+</section>
+<p class="title-content" data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos="fade-up-right">Have Kitchen in room</p>
+
+<section class="vertical-center-3 slider" data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos="fade-up-right">
+    @foreach (var hotelKingBed in Model.KitchenInRoom)
+    {
+        <div>
+            @if (hotelKingBed.HotelPicture != null && hotelKingBed.HotelPicture.Length > 0)
+            {
+                <img asp-controller="Homepage" asp-action="HotelDetail" asp-route-id="@hotelKingBed.Id" class="image-slider" src="@hotelKingBed.HotelPicture">
+            }
+            else
+            {
+                <img asp-controller="Homepage" asp-action="HotelDetail" asp-route-id="@hotelKingBed.Id" class="image-slider" src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930">
+            }
+
+        </div>
+    }
+
 
 </section>
 
-
+<div class="row story-container" data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos="zoom-in">
+    <div class="col-4"> <img src="/img/story-banner.png" /></div>
+    <div class="col-8 story-container-left">
+        <p class="story-title">Happy Family</p>
+        <div>
+            <i class="fas fa-star" style="color: #FFCC47; font-size: 20px;"></i>
+            <i class="fas fa-star" style="color: #FFCC47; font-size: 20px;"></i>
+            <i class="fas fa-star" style="color: #FFCC47; font-size: 20px;"></i>
+            <i class="fas fa-star" style="color: #FFCC47; font-size: 20px;"></i>
+            <i class="fas fa-star" style="color: #FFCC47; font-size: 20px;"></i>
+        </div>
+        <p class="story-main-title">
+            What a great trip with my family and
+            I should try again next time soon ...
+        </p>
+        <button type="submit" class="button-survey-hotel" style="width: 210px;">Read Their Story</button>
+    </div>
+</div>

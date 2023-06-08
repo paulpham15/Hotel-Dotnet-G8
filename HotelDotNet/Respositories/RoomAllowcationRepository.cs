@@ -54,6 +54,7 @@ namespace HotelDotNet.Respositories
                     HotelId = model.HotelId,
                     NumberOfRoom = model.NumberOfRoom,
                     RoomTypeString = room.Title,
+                    
 
                 };
                 await AddAsync(newRoom);

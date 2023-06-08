@@ -7,9 +7,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>@ViewData["Title"] - HotelDotNet</title>
-    <link rel="shortcut icon" type="image/x-icon" href="~/user.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/home.ico" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/homepage.css" asp-append-version="true" />
@@ -18,12 +18,15 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css
+" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="~/lib/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="~/lib/slick/slick-theme.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <div id="main-top-bar">
+    <div id="main-top-bar" class="header-user-homepage">
         <div style="flex: 1">
             <a asp-area="" asp-controller="HomePage" asp-action="Index" style="margin-top: 20px;">
                 <span class="brand-title hide-menu m-l-5"><span style="color: black;">G8</span>Booking</span>
@@ -31,8 +34,8 @@
         </div>
 
         <div class="nav-homepage">
-            <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-            <a class="nav-link" asp-area="" asp-controller="HotelExplore" asp-action="Index">Hotel</a>
+            <a class="nav-link @(ViewData["Title"] == "Home Page" ? "active" : "")" asp-area="" asp-controller="HomePage" asp-action="Index">Home</a>
+            <a class="nav-link @(ViewData["Title"] == "Hotel List" ? "active" : "")" asp-area="" asp-controller="HotelList" asp-action="Index">Hotel</a>
             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Explore</a>
         </div>
         <div class="user-menu">
@@ -154,24 +157,17 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js
+"></script>
     <script src="~/lib/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script>$(function () {
             $('.table').DataTable();
 
         });</script>
-    <script>const links = document.querySelectorAll('.nav-link');
 
-        if (links.length) {
-            links.forEach((link) => {
-                link.addEventListener('click', (e) => {
-                    links.forEach((link) => {
-                        link.classList.remove('active');
-                    });
-                    e.preventDefault();
-                    link.classList.add('active');
-                });
-            });
-        }</script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

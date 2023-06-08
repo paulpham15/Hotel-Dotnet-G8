@@ -3,6 +3,7 @@ using System;
 using HotelDotNet.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HotelDotNet.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230607031108_fixxingtablebooking")]
+    partial class fixxingtablebooking
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.16");
@@ -82,9 +84,6 @@ namespace HotelDotNet.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("BookingId")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("ClientEmail")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -99,9 +98,6 @@ namespace HotelDotNet.Data.Migrations
 
                     b.Property<int?>("ClientPhoneNumber")
                         .HasColumnType("INTEGER");
-
-                    b.Property<string>("DateCheckIn")
-                        .HasColumnType("TEXT");
 
                     b.Property<bool?>("DoneBooking")
                         .HasColumnType("INTEGER");
@@ -565,7 +561,7 @@ namespace HotelDotNet.Data.Migrations
                         {
                             Id = "408aa945-3d84-4421-8342-7269ec64d949",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "58ada3d3-dd75-452d-bac3-921c5dc6180a",
+                            ConcurrencyStamp = "636aca72-50a8-4b07-9504-2f20c761a3bb",
                             Email = "admin@localhost.com",
                             EmailConfirmed = true,
                             Firstname = "System",
@@ -573,9 +569,9 @@ namespace HotelDotNet.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEIuXo6mGWHS1nf33sEA4wTH0gsxW22DHUoIkIr01YKr9VmhXnFHbyOxD23fYNMBZUA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEAvVUl63NfTan11o8kK3IgJONBedNnZGoNZ7jLgiNxnXFSbUvtjulsF4x8kEU7fC8A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "10a363c0-aaf4-4f0d-a02d-1dfb2e2ce421",
+                            SecurityStamp = "4e620248-22cd-433e-8cff-4917a7e7f255",
                             TwoFactorEnabled = false,
                             UserName = "admin@localhost.com"
                         },
@@ -583,7 +579,7 @@ namespace HotelDotNet.Data.Migrations
                         {
                             Id = "3f4631bd-f907-4409-b416-ba356312e659",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2b6cce01-d9a9-4749-a70f-313291210142",
+                            ConcurrencyStamp = "351f675d-a099-4789-9b19-c53be50f2499",
                             Email = "user@localhost.com",
                             EmailConfirmed = true,
                             Firstname = "System",
@@ -591,9 +587,9 @@ namespace HotelDotNet.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LOCALHOST.COM",
                             NormalizedUserName = "USER@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAELbXp6ulrDaUZvf9nyIR1T/FpNogfFynP+phx0uBrpHkyCj1iIs2DBJy/qjavqY17A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEAi/qrwmCVC9cZVN4YRgWgZN6Ve4ZkpXYrRXONBVsoVxU2/nsXh8nKhX5AmFUfwF6g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "9c87bcd9-15ed-4713-a3a6-cf606aecd83a",
+                            SecurityStamp = "d246ccaa-b8c9-46fb-8c10-a4f8b45f7e4e",
                             TwoFactorEnabled = false,
                             UserName = "user@localhost.com"
                         });
@@ -628,14 +624,14 @@ namespace HotelDotNet.Data.Migrations
                         new
                         {
                             Id = "cac43a6e-f7bb-4448-baaf-1add431ccbbf",
-                            ConcurrencyStamp = "bffb8942-5ece-4d6d-bd97-43ea24f7bf0d",
+                            ConcurrencyStamp = "ebe028be-d7a1-4aef-9e65-8cb0d6e286a0",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "cac43a7e-f7cb-4148-baaf-1acb431eabbf",
-                            ConcurrencyStamp = "db0d84ab-3cf7-4df5-8847-65b6f08f3f13",
+                            ConcurrencyStamp = "3ee617cd-1b78-4da8-8fdb-fde6cf0b1f2c",
                             Name = "User",
                             NormalizedName = "USER"
                         });

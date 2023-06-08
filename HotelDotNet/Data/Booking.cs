@@ -18,9 +18,11 @@ namespace HotelDotNet.Data
         public string ClientName { get; set; }
         public string ClientEmail { get; set; }
         public int? ClientPhoneNumber { get; set; }
-        public int TotalClient { get; set; }
+        public int TotalPeople { get; set; }
         public string? Note { get; set; }
+        public string? DateCheckIn { get; set; }
         public bool? DoneBooking { get; set; }
+        public string? BookingId { get; set; }
     }
 }
 

@@ -4,9 +4,9 @@ using HotelDotNet.Data;
 
 namespace HotelDotNet.Respositories
 {
-	public class RoomFacilitiesRepository : GenericRepository<RoomFacilities>, IRoomFacilitiesRespository
+	public class BookingRepository : GenericRepository<Booking>, IBookingRespository
     {
-        public RoomFacilitiesRepository(ApplicationDbContext context) : base(context)
+        public BookingRepository(ApplicationDbContext context) : base(context)
         {
         }
     }

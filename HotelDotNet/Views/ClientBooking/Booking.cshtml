@@ -1,0 +1,112 @@
+﻿
+@model BookingVM
+@{
+    ViewData["Title"] = "Booking ";
+}
+<div class="container">
+    <div class="progress-bar">
+        <div class="step">
+
+            <div class="bullet onprogress ">
+                <span>1</span>
+            </div>
+            <div class="check fas fa-check "></div>
+        </div>
+        <div class="step">
+
+            <div class="bullet ">
+                <span>2</span>
+            </div>
+            <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+
+            <div class="bullet ">
+                <span>3</span>
+            </div>
+            <div class="check fas fa-check "></div>
+        </div>
+
+    </div>
+    <div class="hotel-detail-header">
+        <h1 class="hotel-detail-title">Booking Infomation</h1>
+        <p class="hotel-detail-location">Please fill up this black field below</p>
+    </div>
+    <form class="booking-form" asp-action="Booking">
+        <div class="row">
+            <div class="col client-booking-left">
+                <div class="client-booking-image">
+                    <img src="/img/banner.png" />
+                </div>
+                <div class="client-booking-infomation">
+                    <div class="client-booking-title">
+                        <span class="client-booking-title-main">Hotel Name : @ViewBag.Hotel</span></br>
+                        <span class="client-booking-title-sub">Room Name : @ViewBag.Room</span>
+                    </div>
+                    <div class="client-booking-price">
+
+                        <span style="color:#152C5B; font-weight: 500">$</span><span id="price-hotel" style="color:#152C5B; font-weight: 500">@ViewBag.TotalPrice</span> USD per
+                        <span id="day-hotel" style="color:#152C5B; font-weight: 500">@ViewBag.Day</span>@ViewBag.NumberOfDay day</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <input hidden name="HotelId" value="@ViewBag.HotelId" />
+                <input hidden name="RoomAllocationId" value="@ViewBag.RoomId" />
+                <input hidden name="ClientId" value="@ViewBag.ClientId" />
+                <input hidden name="DateCheckIn" value="@ViewBag.DateTime" />
+                <input hidden name="TotalPrice" value="@ViewBag.TotalPrice" />
+                <input hidden name="TotalPeople" value="@ViewBag.People" />
+                <div class="form-group">
+                    <label asp-for="FirstName" class="control-label label-booking"></label>
+                    </br>
+                    <input asp-for="FirstName" class="form-control" placeholder="Type First Name" value="@ViewBag.FirstName" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                </br>
+                <div class="form-group">
+                    <label asp-for="LastName" class="control-label label-booking"></label>
+                    </br>
+                    <input asp-for="LastName" class="form-control" placeholder="Type Last Name" value="@ViewBag.LastName" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+                </br>
+                <div class="form-group">
+                    <label asp-for="ClientPhoneNumber" class="control-label label-booking"></label>
+                    </br>
+                    <input type="number" asp-for="ClientPhoneNumber" class="form-control" placeholder="Type Phone Number" />
+                    <span asp-validation-for="ClientPhoneNumber" class="text-danger"></span>
+                </div>
+                </br>
+                <div class="form-group">
+                    <label asp-for="ClientEmail" class="control-label label-booking"></label>
+                    </br>
+                    <input type="text" asp-for="ClientEmail" class="form-control" placeholder="Type Email" value="@ViewBag.Email" />
+                    <span asp-validation-for="ClientEmail" class="text-danger"></span>
+                </div>
+            </div>
+
+
+        </div>
+        </br>
+        <div class="btn-booking-container">
+            <button id="booking-confirm-button" type="submit" class="btn-submit-booking">Continue Booking</button>
+        </div>
+
+    </form>
+    @*comemnt*@
+
+
+
+
+
+
+</div>
+
+@section Scripts {
+    <script>
+       
+    </script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

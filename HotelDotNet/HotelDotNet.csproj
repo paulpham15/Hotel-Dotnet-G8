@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
+      <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+      <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-HotelDotNet-6a8601fc-9c0f-4194-977d-e5bcfe43bde1</UserSecretsId>
   </PropertyGroup>
-
   <ItemGroup>
     <None Remove="Contracts\" />
     <None Remove="Respositories\" />
@@ -23,6 +23,8 @@
     <None Remove="favicon.ico" />
     <None Remove="Views\Shared\home.ico" />
     <None Remove="Areas\Admin\Views\Booking\" />
+    <None Remove="Views\HotelList\" />
+    <None Remove="Views\ClientBooking\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\user.ico" />
@@ -30,7 +32,6 @@
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.16" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
@@ -47,8 +48,11 @@
     <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="21.2.6" />
     <PackageReference Include="Bootstrap.v3.Datetimepicker" Version="4.17.49" />
     <PackageReference Include="Bootstrap.v3.Datetimepicker.CSS" Version="4.17.49" />
+    <PackageReference Include="MailKit" Version="4.0.0" />
+    <PackageReference Include="MimeKit" Version="4.0.0" />
+    <PackageReference Include="BarCode" Version="2023.4.1" />
+    <PackageReference Include="QRCoder-ImageSharp" Version="0.9.0" />
   </ItemGroup>
-
   <ItemGroup>
     <Folder Include="Contracts\" />
     <Folder Include="Respositories\" />
@@ -65,6 +69,8 @@
     <Folder Include="Areas\Admin\Views\Dashboard\" />
     <Folder Include="Views\HomePage\" />
     <Folder Include="Areas\Admin\Views\Booking\" />
+    <Folder Include="Views\HotelList\" />
+    <Folder Include="Views\ClientBooking\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\img\" />

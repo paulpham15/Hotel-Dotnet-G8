@@ -5,8 +5,9 @@ namespace HotelDotNet.Models
 {
 	public class HotelRoomsVM: HotelListVM
     {
-		
-		public List<RoomAllocationVM> RoomAllocations { get; set; }
+		public BookingCreateVM BookingCreate { get; set; }
+        public List<RoomAllocationVM> RoomAllocations { get; set; }
+      
     }
 }
 

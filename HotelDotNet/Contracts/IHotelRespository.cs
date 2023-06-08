@@ -10,6 +10,7 @@ namespace HotelDotNet.Contracts
         Task<List<HotelListVM>> GetPopularHotel(int number);
         Task<List<HotelListVM>> GetHotelWithKingBed();
         Task<List<HotelListVM>> GetHotelMostPicked();
+        Task<List<HotelListVM>> GetHotelKitchenInRoom();
         Task<List<HotelListVM>> GetHotelWithLocalte(string locate);
     }
 }

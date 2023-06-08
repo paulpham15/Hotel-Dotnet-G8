@@ -1,0 +1,90 @@
+﻿@model VerifyPurchasedVM
+@{
+    ViewData["Title"] = "Booking " ;
+}
+<div class="container">
+    <div class="progress-bar">
+        <div class="step">
+
+            <div class="bullet active ">
+                <span>1</span>
+            </div>
+            <div class="check fas fa-check active "></div>
+        </div>
+        <div class="step">
+
+            <div class="bullet onprogress ">
+                <span>2</span>
+            </div>
+            <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+
+            <div class="bullet ">
+                <span>3</span>
+            </div>
+            <div class="check fas fa-check "></div>
+        </div>
+
+    </div>
+    <div class="hotel-detail-header">
+        <h1 class="hotel-detail-title">Booking Infomation</h1>
+        <p class="hotel-detail-location">Please fill up this black field below</p>
+    </div>
+    <form id="checkout-form" class="booking-form" asp-action="VerifyPurcharsed">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row">
+            <div class="col client-booking-left client-verify-left ">
+                <p> Transfer Pembayaran: </p></br>
+                <p> Price : @ViewBag.TotalPrice </p></br>
+                <p> Tax : 10% </p>
+                </br>
+                <p style="font-weight: 700;font-size: 20px;"> Total Price : @(ViewBag.TotalPrice + (ViewBag.TotalPrice * 10/100))</p>
+            </div>
+            <div class="col">
+                <input hidden asp-for="Id" class="form-control" placeholder="Card number" value="@ViewBag.BillId" />
+                <div class="form-group">
+                    <label asp-for="CreditCardNumber" class="control-label label-booking"></label>
+                    </br>
+                    <input type="text" id="card-number-valid" asp-for="CreditCardNumber" class="form-control" placeholder="Card number" />
+                    <span asp-validation-for="CreditCardNumber" class="text-danger"></span>
+                </div>
+                </br>
+                <div class="form-group">
+                    <label asp-for="CreditNameHolder" class="control-label label-booking"></label>
+                    </br>
+                    <input asp-for="CreditNameHolder" class="form-control" placeholder="Name holder" />
+                    <span asp-validation-for="CreditNameHolder" class="text-danger"></span>
+                </div>
+                </br>
+                <div class="form-group">
+                    <label asp-for="CCV" class="control-label label-booking"></label>
+                    </br>
+                    <input asp-for="CCV" class="form-control" placeholder="CCV" />
+                    <span asp-validation-for="CCV" class="text-danger"></span>
+                </div>
+                </br>
+            </div>
+
+
+        </div>
+        </br>
+        <div class="btn-booking-container">
+            <button type="submit" class="btn-submit-booking">Complete Booking</button>
+        </div>
+
+    </form>
+    @*comemnt*@
+
+
+
+
+
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
+
+}

@@ -25,8 +25,8 @@ namespace HotelDotNet.Controllers
         private readonly IRoomAllocationRespository roomAllocationRespository;
         private readonly IRoomTypeRespository roomTypeRepository;
         private readonly IMapper mapper;
-
-        public HotelController(ApplicationDbContext context,IHotelRespository hotelRespository,IWebHostEnvironment webHostEnvironment, IRoomAllocationRespository roomAllocationRespository,IRoomTypeRespository roomTypeRepository,IMapper mapper)
+        private readonly IEmailSender emailSender;
+        public HotelController(ApplicationDbContext context, IEmailSender emailSender, IHotelRespository hotelRespository, IWebHostEnvironment webHostEnvironment, IRoomAllocationRespository roomAllocationRespository, IRoomTypeRespository roomTypeRepository, IMapper mapper)
         {
             _context = context;
             this.hotelRespository = hotelRespository;
@@ -34,15 +34,16 @@ namespace HotelDotNet.Controllers
             this.roomAllocationRespository = roomAllocationRespository;
             this.roomTypeRepository = roomTypeRepository;
             this.mapper = mapper;
+            this.emailSender = emailSender;
         }
 
         // GET: Hotel
         public async Task<IActionResult> Index()
         {
-        
-              return _context.Hotels != null ? 
-                          View(await _context.Hotels.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Hotels'  is null.");
+     
+            return _context.Hotels != null ?
+                        View(await _context.Hotels.ToListAsync()) :
+                        Problem("Entity set 'ApplicationDbContext.Hotels'  is null.");
         }
 
         // GET: Hotel/Details/5
@@ -52,9 +53,11 @@ namespace HotelDotNet.Controllers
             return View(model);
         }
 
+
         // GET: Hotel/Create
         public IActionResult Create()
         {
+            
             ViewBag.Location = new SelectList(_context.Locations, "Name", "Name");
             return View();
         }
@@ -82,7 +85,7 @@ namespace HotelDotNet.Controllers
                     HotelPicture = hotelVm.ImageUrl,
                     Rating = hotelVm.Rating,
                     Location = hotelVm.Location,
-                    NumberOfBooking= 0,
+                    NumberOfBooking = 0,
                     hotelAvail = HotelAvail.Available,
                 };
                 await hotelRespository.AddAsync(hotel);
@@ -109,25 +112,25 @@ namespace HotelDotNet.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateRoom(RoomAllocationCreateVM roomVM)
         {
-           
-                if (ModelState.IsValid)
+
+            if (ModelState.IsValid)
+            {
+                if (roomVM?.Picture != null)
                 {
-                    if (roomVM?.Picture != null)
-                    {
-                        string folder = "img/HotelImg/";
+                    string folder = "img/HotelImg/";
 
                     roomVM.ImageUrl = await UploadImage(folder, roomVM.Picture);
-                       
-                    }
 
-
-                    await roomAllocationRespository.CreateRoomRequest(roomVM);
-                  
-                    return RedirectToAction(nameof(Index));
-                 
                 }
-            
-          
+
+
+                await roomAllocationRespository.CreateRoomRequest(roomVM);
+
+                return RedirectToAction(nameof(Index));
+
+            }
+
+
             roomVM.RoomTypes = new SelectList(await roomTypeRepository.GetAllAsync(), "Id", "Title", roomVM.RoomTypeId);
             ViewBag.Facilities = new SelectList(_context.Facilities, "Id", "Title");
             return View(roomVM);
@@ -217,14 +220,14 @@ namespace HotelDotNet.Controllers
             {
                 _context.Hotels.Remove(hotel);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool HotelExists(int id)
         {
-          return (_context.Hotels?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Hotels?.Any(e => e.Id == id)).GetValueOrDefault();
         }
         private async Task<string> UploadImage(string folderPath, IFormFile file)
         {

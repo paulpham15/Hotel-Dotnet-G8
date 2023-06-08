@@ -1,0 +1,69 @@
+﻿@model HotelDotNet.Data.Booking
+@{
+}
+<div class="container">
+    <div class="progress-bar">
+        <div class="step">
+
+            <div class="bullet active ">
+                <span>1</span>
+            </div>
+            <div class="check fas fa-check active "></div>
+        </div>
+        <div class="step">
+
+            <div class="bullet active ">
+                <span>2</span>
+            </div>
+            <div class="check fas fa-check active"></div>
+        </div>
+        <div class="step">
+
+            <div class="bullet active ">
+                <span>3</span>
+            </div>
+            <div class="check fas fa-check active "></div>
+        </div>
+    </div>
+    <h2 style="text-align: center; color: #152C5B">Booking Complete</h2>
+    <div class="modal-bill-container">
+        <p class="modal-bill-title">Bill Infomation</p>
+        <div class="modal-bill-content">
+            <span class="modal-bill-info">Hotel Name:</span>  <span class="modal-bill-data">@ViewBag.HotelName</span>
+        </div>
+        </br>
+        <div class="modal-bill-content">
+            <span class="modal-bill-info">Hotel Address:</span>  <span class="modal-bill-data">141 Điện Biên Phủ , Bình Thạnh, TPHCM</span>
+        </div>
+        </br>
+        <div class="modal-bill-content">
+            <span class="modal-bill-info">Room Name:</span>  <span class="modal-bill-data">@ViewBag.RoomName</span>
+        </div>
+        </br>
+        <div class="modal-bill-content">
+            <span class="modal-bill-info">Customer Name:</span>  <span class="modal-bill-data">@Model.ClientName</span>
+        </div>
+        </br>
+        <div class="modal-bill-content">
+            <span class="modal-bill-info">Customer Email:</span>  <span class="modal-bill-data">@Model.ClientEmail</span>
+        </div>
+        </br>
+        <div class="modal-bill-content">
+            <span class="modal-bill-info">Customer Phone:</span>  <span class="modal-bill-data">0@(Model.ClientPhoneNumber)</span>
+        </div>
+        </br>
+
+        <div class="modal-bill-content">
+            <span class="modal-bill-info">Date Check-in:</span>  <span class="modal-bill-data">@ViewBag.DateCheckin</span>
+        </div>
+        </br>
+
+        <div class="modal-bill-content">
+            <span class="modal-bill-info">Booking Id:</span>  <span class="modal-bill-data">@Model.BookingId</span>
+        </div>
+        <div class="form-group">
+            <img alt="Embedded QR Code" style='width:250px; height:250px'
+                 src="data:image/@ViewBag.QrCodeUri;base64,@Html.Raw(ViewBag.QrCodeUri)" />
+        </div>
+    </div>
+</div>

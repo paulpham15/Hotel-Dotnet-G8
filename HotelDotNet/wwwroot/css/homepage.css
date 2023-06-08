@@ -858,7 +858,7 @@ header {
     cursor: pointer;
 }
 /* inputs form  */
-input[class="form-input"] {
+input[class="form-input-login"] {
     width: 240px;
     height: 50px;
     margin-top: 2%;
@@ -874,9 +874,22 @@ input[class="form-input"] {
 
 input[id="txt-input"] {
     width: 250px;
+    display: inline-block;
+    color: #252537;
+    height: 50px;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    transition: all 0.2s linear;
+    margin: 7% auto;
+    letter-spacing: 0.05em;
 }
 /* focus  */
-input:focus {
+.login-input:focus {
     transform: translateX(-2px);
     border-radius: 5px;
 }
@@ -886,7 +899,7 @@ input:focus {
 
 /* input[type="text"] {min-width: 250px;} */
 /* buttons  */
-button {
+.login-form-button {
     display: inline-block;
     color: #252537;
     width: 280px;
@@ -922,13 +935,13 @@ button {
 
 
 /* buttons hover */
-button:hover {
+.login-form-button:hover {
     transform: translatey(3px);
     box-shadow: none;
 }
 
 /* buttons hover Animation */
-button:hover {
+.login-form-button:hover {
     animation: ani9 0.4s ease-in-out infinite alternate;
 }
 

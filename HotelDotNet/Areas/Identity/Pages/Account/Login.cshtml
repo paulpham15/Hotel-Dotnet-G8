@@ -7,12 +7,12 @@
 <div class="row form-login-container">
     <div class="overlay">
         <!-- LOGN IN FORM by Omar Dsoky -->
-        <form class="login-form">
+        <form class="login-form" method="post">
             <!--   con = Container  for items in the form-->
             <div class="con">
                 <!--     Start  header Content  -->
                 <header class="head-form">
-                    <h2>Log In</h2>
+                    <h2>LogIn</h2>
                     <!--     A welcome message or an explanation of the login form -->
                     <p>login here using your username and password</p>
                 </header>
@@ -25,7 +25,7 @@
                         <i class="fa fa-user-circle"></i>
                     </span>
                     <!--   user name Input-->
-                    <input class="form-input" id="txt-input" type="username" name="UsserName" required>
+                    <input class="form-input-login" id="txt-input" type="username" asp-for="Input.Email">
 
                     <br>
 
@@ -35,7 +35,7 @@
                         <i class="fa fa-key"></i>
                     </span>
                     <!--   Password Input-->
-                    <input class="form-input" id="txt-input" type="password" name="PassWord" required>
+                    <input id="txt-input" asp-for="Input.Password">
 
                     <!--      Show/hide password  -->
                     
@@ -44,19 +44,22 @@
                     <br>
                     <!--        buttons -->
                     <!--      button LogIn -->
-                    <button class="log-in"> Log In </button>
+                    <button type="submit" class="log-in login-form-button"> Log In </button>
                 </div>
 
                 <!--   other buttons -->
                 <div class="other">
                     <!--      Forgot Password button-->
-                    <button class="btn submits frgt-pass">Forgot Password</button>
+                    <button class="btn submits frgt-pass login-form-button">Forgot Password</button>
                     <!--     Sign Up button -->
-                    <button class="btn submits sign-up">
+
+                    <button onclick="location.href='/Identity/Account/Register'" href="/Identity/Account/Register" class="btn submits sign-up login-form-button ">
                         Sign Up
-                        <!--         Sign Up font icon -->
-                        <i class="fa fa-user-plus" aria-hidden="true"></i>
-                    </button>
+                            <!--         Sign Up font icon -->
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>
+                        </button>
+                   
+                   
                     <!--      End Other the Division -->
                 </div>
 
@@ -69,28 +72,6 @@
 <div>
 
 @section Scripts {
-    <script>
-        function show() {
-    var p = document.getElementById('pwd');
-    p.setAttribute('type', 'text');
-}
-
-function hide() {
-    var p = document.getElementById('pwd');
-    p.setAttribute('type', 'password');
-}
-
-var pwShown = 0;
-
-document.getElementById("eye").addEventListener("click", function () {
-    if (pwShown == 0) {
-        pwShown = 1;
-        show();
-    } else {
-        pwShown = 0;
-        hide();
-    }
-}, false);
-    </script>
+   
     <partial name="_ValidationScriptsPartial" />
 }

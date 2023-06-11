@@ -1,47 +1,43 @@
-@model IEnumerable<HotelDotNet.Data.Booking>
+@model IEnumerable<BookingListVM>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Booking List</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    @*<a asp-action="Create">Create New</a>*@
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Hotel)
+                @Html.DisplayNameFor(model => model.Id)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.RoomAllocation)
+                @Html.DisplayNameFor(model => model.HotelName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TotalPrice)
+                @Html.DisplayNameFor(model => model.RoomName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ClientId)
+                @Html.DisplayNameFor(model => model.Price)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ClientName)
+                @Html.DisplayNameFor(model => model.CheckinDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ClientEmail)
+                @Html.DisplayNameFor(model => model.Day)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ClientPhoneNumber)
+                @Html.DisplayNameFor(model => model.People)
             </th>
+  
             <th>
-                @Html.DisplayNameFor(model => model.TotalPeople)
+                @Html.DisplayNameFor(model => model.Status)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Note)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DoneBooking)
-            </th>
+          
             <th></th>
         </tr>
     </thead>
@@ -49,39 +45,44 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Hotel.Id)
+                @Html.DisplayFor(modelItem => item.Id)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.RoomAllocation.Id)
+                @Html.DisplayFor(modelItem => item.HotelName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TotalPrice)
+                @Html.DisplayFor(modelItem => item.RoomName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ClientId)
+                @Html.DisplayFor(modelItem => item.Price)$
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ClientName)
+                @Html.DisplayFor(modelItem => item.CheckinDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ClientEmail)
+                @Html.DisplayFor(modelItem => item.Day)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ClientPhoneNumber)
+                @Html.DisplayFor(modelItem => item.People)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TotalPeople)
+                @if (item.Status)
+                {
+
+
+                    <span style="color: #22A699;font-weight: 600"> <button  class="dot-green"></button>Done</span>
+                }
+                else
+                {
+                    <span style="color: #F2BE22; font-weight: 600 "><button class="dotYellow"></button>Spending</span>
+
+                }
             </td>
+           
             <td>
-                @Html.DisplayFor(modelItem => item.Note)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DoneBooking)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                
+                <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id"> Details</a> 
+                
             </td>
         </tr>
 }

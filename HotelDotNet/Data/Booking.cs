@@ -14,6 +14,7 @@ namespace HotelDotNet.Data
         public int RoomAllocationId { get; set; }
         public RoomAllocation RoomAllocation { get; set; }
         public int TotalPrice { get; set; }
+        public int TotalDay { get; set; }
         public string ClientId { get; set; }
         public string ClientName { get; set; }
         public string ClientEmail { get; set; }

@@ -57,7 +57,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css
                     <div class="user-dropdown">
 
                         <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="dropdown-item"><span class="mr-3"><i class="fa fa-user"></i></span> Dashboard</a>
-                        <a href="#" class="dropdown-item"><span class="mr-3"><i class="fa fa-building"></i></span> Profile</a>
+                        <a asp-area="Identity" asp-page="/Account/Manage/Index" class="dropdown-item"><span class="mr-3"><i class="fa fa-building"></i></span> Profile</a>
                         <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "HomePage", new { area = "" })">
                             <button href="#" type="submit" class="dropdown-item"><span class="mr-3"><i class="fa fa-power-off"></i></span> Logout</button>
                         </form>
@@ -77,7 +77,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css
 
                     <div class="user-dropdown">
 
-                        <a href="#" class="dropdown-item"><span class="mr-3"><i class="fa fa-building"></i></span> Profile</a>
+                        <a asp-area="Identity" asp-page="/Account/Manage/Index" class="dropdown-item"><span class="mr-3"><i class="fa fa-building"></i></span> Profile</a>
                         <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "HomePage", new { area = "" })">
                             <button href="#" type="submit" class="dropdown-item"><span class="mr-3"><i class="fa fa-power-off"></i></span>Logout</button>
                         </form>
@@ -93,6 +93,12 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css
     </div>
     <div class="container-homepage">
         <main role="main" class="pb-3">
+            @{
+                var successMessage = TempData["SuccessMessage"]?.ToString();
+                var errorMessage = TempData["ErrorMesseage"]?.ToString();
+            }
+            <input hidden id="messageSuccess" value="@TempData["SuccessMessage"]" />
+            <input hidden id="messageError" value="@TempData["ErrorMesseage"]"  />
             @RenderBody()
         </main>
     </div>
@@ -163,6 +169,27 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js
     <script src="~/lib/slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>
+    <script>$(document).ready(function () {
+    var successMessage = $("#messageSuccess").val()
+    var errorMessage = $("#messageError").val()
+    if (successMessage.length > 0) {
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: successMessage,
+            showConfirmButton: false,
+            timer: 1500
+        });
+    } else if (errorMessage.length > 0) {
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: errorMessage,
+            showConfirmButton: false,
+            timer: 1500
+        });
+    }
+        })</script>
     <script>$(function () {
             $('.table').DataTable();
 

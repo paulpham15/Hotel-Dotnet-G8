@@ -110,11 +110,14 @@ namespace HotelDotNet.Areas.Identity.Pages.Account
 
             if (ModelState.IsValid)
             {
+                
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
+                    TempData["SuccessMessage"] = "Login Success";
+                 
                     _logger.LogInformation("User logged in.");
                     return LocalRedirect(returnUrl);
                 }
@@ -129,7 +132,9 @@ namespace HotelDotNet.Areas.Identity.Pages.Account
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    TempData["ErrorMesseage"] = "Login Failed";
+                    ModelState.AddModelError(string.Empty, "Wrong password or username.");
+                  
                     return Page();
                 }
             }

@@ -1,0 +1,24 @@
+﻿@page
+@model ConfirmEmailModel
+@{
+    ViewData["Title"] = "Confirm email";
+}
+
+<div class=content-email-confirm>
+    <div class="wrapper-1">
+        <div class="wrapper-2">
+            <h1 class="email-confirm">Registed completed!</h1>
+            <p>Confirm email success go to home page to countinue booking</p>
+            
+            <button asp-action="Index" asp-controller="Homepage" class="go-home">
+                <a href="/">go home</a>
+            </button>
+        </div>
+        <div class="footer-like">
+            <p>
+                Welcome to G8Booking?
+              
+            </p>
+        </div>
+    </div>
+</div>

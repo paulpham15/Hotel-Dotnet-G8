@@ -4,64 +4,141 @@
     ViewData["Title"] = "Register";
 }
 
-<h1>@ViewData["Title"]</h1>
 
-<div class="row">
-    <div class="col-md-4">
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h2>Create a new account.</h2>
-            <hr />
+
+<div class="row form-login-container">
+    <div class="overlay">
+        <!-- LOGN IN FORM by Omar Dsoky -->
+        <form class="login-form" id="login-form-home" method="post">
+            <!--   con = Container  for items in the form-->
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-floating">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
-                <label asp-for="Input.Email"></label>
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
-            </div>
-            <div class="form-floating">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="Input.Password"></label>
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
-            </div>
-            <div class="form-floating">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="Input.ConfirmPassword"></label>
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-            </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
-        </form>
-    </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Use another service to register.</h3>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins!)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
-                        </div>
-                    </form>
-                }
-            }
-        </section>
-    </div>
-</div>
+            <div class="con">
+                <!--     Start  header Content  -->
+                <header class="head-form">
+                    <h2>Register</h2>
+                    <!--     A welcome message or an explanation of the login form -->
+                    <p>Register new account</p>
+                </header>
+                @*<p>@TempData["Success"]</p>
+                    <input class="form-input-login" id="messe" type="text" value="@TempData["Success"]">*@
 
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
+            <div class="field-set">
+
+                <!--   user name -->
+                <div>
+                    <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+                    <!--   user name Input-->
+                    <input placeholder="Email" class="form-input-login form-control" id="txt-input" type="username" asp-for="Input.Email" autocomplete="username" aria-required="true">
+                    <br />
+                    <span asp-validation-for="Input.Email" class="text-danger" style="font-size: 13px;"></span>
+                </div>
+
+                <div>
+                    <span class="input-item">
+                        <i class="far fa-file-alt"></i>
+                    </span>
+                    <!--   user name Input-->
+                    <input placeholder="First Name" class="form-input-login form-control" id="txt-input" asp-for="Input.Firstname"  aria-required="true">
+                    <br />
+                    <span asp-validation-for="Input.Firstname" class="text-danger" style="font-size: 13px;"></span>
+                </div>
+
+
+                <div>
+                    <span class="input-item">
+                        <i class="far fa-file-alt"></i>
+                    </span>
+                    <!--   user name Input-->
+                    <input placeholder="Last Names" class="form-input-login form-control" id="txt-input" asp-for="Input.Lastname"  aria-required="true">
+                    <br />
+                    <span asp-validation-for="Input.Lastname" class="text-danger" style="font-size: 13px;"></span>
+                </div>
+
+
+
+                <!--   Password -->
+                <div>
+                    <span class="input-item">
+                        <i class="fa fa-key"></i>
+                    </span>
+                    <!--   Password Input-->
+                    <input placeholder="Password"  id="txt-input" asp-for="Input.Password">
+                    <br />
+                    <span asp-validation-for="Input.Password" class="text-danger" style="font-size: 13px;"></span>
+                </div>
+                <div>
+                    <span class="input-item">
+                        <i class="fa fa-key"></i>
+                    </span>
+                    <!--   Password Input-->
+                    <input placeholder="Confirm Password" id="txt-input" asp-for="Input.ConfirmPassword">
+                    <br />
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger" style="font-size: 13px;"></span>
+                </div>
+
+                @*<div>
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>*@
+
+                <!--      Show/hide password  -->
+                <!--        buttons -->
+                <!--      button LogIn -->
+
+                <button id="registerSubmit" type="submit" class="log-in login-form-button"> Register </button>
+            </div>
+
+                <!--   other buttons -->
+            <div class="other">
+                <!--      Forgot Password button-->
+
+                <a id="forgot-password" class="btn submits frgt-pass" style="margin-top: 14px;" asp-page="./ForgotPassword">External Login</a>
+
+                <!--     Sign Up button -->
+
+                <button type="button" onclick="location.href='/Identity/Account/Login'" href="/Identity/Account/Login" class="btn submits sign-up login-form-button ">
+                    Back to Login
+                    <!--         Sign Up font icon -->
+                  
+                </button>
+
+
+                <!--      End Other the Division -->
+            </div>
+
+                <!--   End Conrainer  -->
+            </div>
+
+            <!-- End Form -->
+        </form>
+
+    </div>
+
+    <div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        @section Scripts {
+            <script>//var messenger = document.getElementById("messe");
+                //console.log(messenger)
+                //Swal.fire({
+                //    position: 'center',
+                //    icon: 'success',
+                //    title: 'Login Success',
+                //    showConfirmButton: false,
+                //    timer: 1000
+                //});
+
+                //if (messenger.val > 0) {
+                //    Swal.fire({
+                //        position: 'top-end',
+                //        icon: 'success',
+                //        title: 'Login Success',
+                //        showConfirmButton: false,
+                //        timer: 1500
+                //    })
+                //};</script>
+            <partial name="_ValidationScriptsPartial" />
+        }
+        <script>$(document).ready(function () {
+
+            })</script>

@@ -20,8 +20,8 @@ namespace HotelDotNet.Controllers
         private readonly IRoomAllocationRespository roomAllocationRespository;
         private readonly IRoomTypeRespository roomTypeRepository;
         private readonly IMapper mapper;
-        private readonly IEmailSender emailSender;
-        public HotelListController(ApplicationDbContext context, IEmailSender emailSender, IHotelRespository hotelRespository, IWebHostEnvironment webHostEnvironment, IRoomAllocationRespository roomAllocationRespository, IRoomTypeRespository roomTypeRepository, IMapper mapper)
+    
+        public HotelListController(ApplicationDbContext context, IHotelRespository hotelRespository, IWebHostEnvironment webHostEnvironment, IRoomAllocationRespository roomAllocationRespository, IRoomTypeRespository roomTypeRepository, IMapper mapper)
         {
             _context = context;
             this.hotelRespository = hotelRespository;
@@ -29,7 +29,7 @@ namespace HotelDotNet.Controllers
             this.roomAllocationRespository = roomAllocationRespository;
             this.roomTypeRepository = roomTypeRepository;
             this.mapper = mapper;
-            this.emailSender = emailSender;
+        
         }
         // GET: HotelList
         public async Task<IActionResult> Index(string searchString,int people,string datetime,int day)

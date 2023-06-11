@@ -14,6 +14,7 @@ namespace HotelDotNet.Models
         public int RoomAllocationId { get; set; }
         public string DateCheckIn { get; set; }
         public int TotalPrice { get; set; }
+        public int TotalDay{ get; set; }
         public string? ClientId { get; set; }
         [Required]
         [Display(Name = "First Name")]

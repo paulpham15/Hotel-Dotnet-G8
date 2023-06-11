@@ -1,0 +1,34 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Register confirmation";
+}
+
+
+@{
+    
+        <div class=content-email-confirm>
+            <div class="wrapper-1">
+                <div class="wrapper-2">
+                    <h1 class="email-confirm">Thank you !</h1>
+                    <p>Thanks for creating new account.  </p>
+                    <p>you should receive a confirmation email soon  </p>
+                    <button asp-action="Index" asp-controller="Homepage" class="go-home">
+                        <a href="/">go home</a> 
+                    </button>
+                </div>
+                <div class="footer-like">
+                    <p>
+                        Email not received?
+                        <a href="/">Click here to send again</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Source+Sans+Pro" rel="stylesheet">
+    
+}
+

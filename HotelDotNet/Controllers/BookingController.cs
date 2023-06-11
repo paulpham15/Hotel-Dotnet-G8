@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HotelDotNet.Data;
 using Microsoft.AspNetCore.Authorization;
+using AutoMapper;
+using HotelDotNet.Models;
 
 namespace HotelDotNet.Controllers
 {
@@ -15,17 +17,40 @@ namespace HotelDotNet.Controllers
     public class BookingController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IMapper mapper;
 
-        public BookingController(ApplicationDbContext context)
+        public BookingController(ApplicationDbContext context,IMapper mapper)
         {
             _context = context;
+            this.mapper = mapper;
         }
 
         // GET: Booking
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Booking.Include(b => b.Hotel).Include(b => b.RoomAllocation);
-            return View(await applicationDbContext.ToListAsync());
+            var applicationDbContext = await _context.Booking.Include(b => b.Hotel).Include(b => b.RoomAllocation).ToListAsync();
+            var Booking = new List<BookingListVM>();
+            foreach(var bookingdata in applicationDbContext)
+            {
+                var Hotel = await _context.Hotels.Where(q => q.Id == bookingdata.HotelId).FirstOrDefaultAsync();
+                var Room = await _context.RoomAllocations.Where(q => q.Id == bookingdata.RoomAllocationId).FirstOrDefaultAsync();
+            
+                Booking.Add(new BookingListVM
+                {
+                    BookingId = bookingdata.BookingId??"",
+                    HotelName = Hotel.Name??"",
+                    RoomName = Room.RoomName??"",
+                    CheckinDate = bookingdata.DateCheckIn??"",
+                    Day = bookingdata.TotalDay,
+                    Price = bookingdata.TotalPrice,
+                    People= bookingdata.TotalPeople,
+                    Id = bookingdata.Id,
+                    Status = bookingdata.DoneBooking??false,
+                });
+            };
+
+           
+            return View(Booking);
         }
 
         // GET: Booking/Details/5

@@ -6,6 +6,8 @@ using HotelDotNet.Contracts;
 using HotelDotNet.Respositories;
 using HotelDotNet.Settings;
 using System.Configuration;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Syncfusion.EJ2.Base;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +22,7 @@ builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfi
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
-builder.Services.AddTransient<IEmailSender, EmailSender>();
+builder.Services.AddTransient<IEmailSender>(s => new EmailSender("localhost", 25, "no-reply@hotelg8.com"));
 builder.Services.AddAutoMapper(typeof(MapperConfig));
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllersWithViews();

@@ -1,4 +1,8 @@
 ﻿@model HotelRoomsVM
+@using Microsoft.AspNetCore.Identity
+@using System.Security.Claims
+@inject SignInManager<HotelDotNet.Data.User> SignInManager
+@inject UserManager<HotelDotNet.Data.User> UserManager
 @{
     ViewData["Title"] = "Hotel " + Model.Name;
 }
@@ -61,6 +65,16 @@
             </div>
             <div class="col-5">
                 <div class="hotel-right">
+                    @if (!SignInManager.IsSignedIn(User))
+                    {
+                        <div class="overlay-authen">
+
+
+                        </div>
+                        
+                            <a href="/Identity/Account/Login" style="opacity: 1;color:white" class="btn btn-primary btn-login-required">Please Login To Countinue</a>
+                       
+                    }
                     <div class="hotel-detail-form">
                         <form asp-action="GoBooking">
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -69,7 +83,7 @@
                             </h1>
                             <span asp-validation-for="@Model.BookingCreate.totalprice" class="text-danger"></span>
                             <input type="number" hidden id="input-booking-price" value="0" />
-                            <input  type="number" hidden id="input-booking-Totalprice" name="totalprice" value="0" />
+                            <input type="number" hidden id="input-booking-Totalprice" name="totalprice" value="0" />
                             <input type="number" hidden name="HotelId" value="@Model.Id" />
                             <fieldset>
                                 <legend>How many people:</legend>
@@ -151,7 +165,7 @@
                         $("#input-booking-Totalprice").val(0)
                         document.getElementById("price-hotel").innerText = (result.items[0] * day);
                     }
-                  
+
                 }
             })
         })</script>
@@ -161,7 +175,7 @@
         var priceHotel = $('#input-booking-price').val();
         console.log(priceHotel);
         var day = document.getElementById("input-booking-stay").value
-    if (day > 0 && priceHotel!=null) {
+        if (day > 0 && priceHotel != null) {
             document.getElementById("price-hotel").innerText = (priceHotel * day);
             $('#input-booking-price').val(priceHotel * day)
         }

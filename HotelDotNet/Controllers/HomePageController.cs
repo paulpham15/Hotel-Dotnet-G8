@@ -20,24 +20,19 @@ namespace HotelDotNet.Controllers
     {
         private readonly ApplicationDbContext context;
         private readonly IHotelRespository hotelRespository;
-        private readonly IEmailSender emailSender;
-        public HomePageController(ApplicationDbContext context, IEmailSender emailSender, IHotelRespository hotelRespository)
+
+        public HomePageController(ApplicationDbContext context, IHotelRespository hotelRespository)
         {
             this.context = context;
             this.hotelRespository = hotelRespository;
-            this.emailSender = emailSender;
+
         }
 
         // GET: /<controller>/
         public async Task<IActionResult> Index()
         {
 
-            await emailSender.SendEmailAsync(new MailRequest
-            {
-                ToEmail = "fomaw19263@pyadu.com",
-                Body = "hihi",
-                Subject= "haha"
-            }) ;
+         
             ViewBag.Location = new SelectList(context.Locations, "Name", "Name");
         
             List<HotelListVM> popularHotel = await hotelRespository.GetHotelMostPicked();
@@ -90,7 +85,7 @@ namespace HotelDotNet.Controllers
         {
             try
             {
-                await emailSender.SendEmailAsync(request);
+               
                 return Ok();
             }
             catch (Exception ex)

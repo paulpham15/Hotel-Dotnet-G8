@@ -18,6 +18,7 @@ namespace HotelDotNet.Configurations
             CreateMap<RoomAllocation, RoomAllocationCreateVM>().ReverseMap();
             CreateMap<RoomFacilities, RoomFacilitiesVM>().ReverseMap();
             CreateMap<Booking, BookingVM>().ReverseMap();
+            CreateMap<Booking, BookingListVM>().ReverseMap();
             CreateMap<User, UserListVM>().ReverseMap();
         }
             

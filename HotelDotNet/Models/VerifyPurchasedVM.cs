@@ -8,8 +8,6 @@ namespace HotelDotNet.Models
 		public int Id { get; set; }
      
         [Display(Name = "Card Number")]
-
-     
         public int CreditCardNumber { get; set; }
         [Required]
         [Display(Name = "Name Holder")]

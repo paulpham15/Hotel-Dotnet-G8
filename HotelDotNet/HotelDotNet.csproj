@@ -25,6 +25,7 @@
     <None Remove="Areas\Admin\Views\Booking\" />
     <None Remove="Views\HotelList\" />
     <None Remove="Views\ClientBooking\" />
+    <None Remove="Areas\Admin\Views\Report\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\user.ico" />
@@ -52,6 +53,7 @@
     <PackageReference Include="MimeKit" Version="4.0.0" />
     <PackageReference Include="BarCode" Version="2023.4.1" />
     <PackageReference Include="QRCoder-ImageSharp" Version="0.9.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.16" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\" />
@@ -71,6 +73,7 @@
     <Folder Include="Areas\Admin\Views\Booking\" />
     <Folder Include="Views\HotelList\" />
     <Folder Include="Views\ClientBooking\" />
+    <Folder Include="Areas\Admin\Views\Report\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\img\" />

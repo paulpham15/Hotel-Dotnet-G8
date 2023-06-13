@@ -35,8 +35,11 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css
 
         <div class="nav-homepage">
             <a class="nav-link @(ViewData["Title"] == "Home Page" ? "active" : "")" asp-area="" asp-controller="HomePage" asp-action="Index">Home</a>
+
             <a class="nav-link @(ViewData["Title"] == "Hotel List" ? "active" : "")" asp-area="" asp-controller="HotelList" asp-action="Index">Hotel</a>
-            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Explore</a>
+            <a class="nav-link @(ViewData["Title"] == "Contact Us" ? "active" : "")" asp-area="" asp-controller="HomePage" asp-action="ContactUs">Contact Us</a>
+            <a class="nav-link @(ViewData["Title"] == "Explore" ? "active" : "")" asp-area="" asp-controller="HomePage" asp-action="Explore">Explore</a>
+
         </div>
         <div class="user-menu">
             @if (SignInManager.IsSignedIn(User))
@@ -58,6 +61,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css
 
                         <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="dropdown-item"><span class="mr-3"><i class="fa fa-user"></i></span> Dashboard</a>
                         <a asp-area="Identity" asp-page="/Account/Manage/Index" class="dropdown-item"><span class="mr-3"><i class="fa fa-building"></i></span> Profile</a>
+                        <a asp-area="" asp-controller="ClientBooking" asp-action="YourBooking" class="dropdown-item"><span class="mr-3"><i class="fas fa-tasks"></i></span>Your Booking</a>
                         <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "HomePage", new { area = "" })">
                             <button href="#" type="submit" class="dropdown-item"><span class="mr-3"><i class="fa fa-power-off"></i></span> Logout</button>
                         </form>
@@ -78,8 +82,9 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css
                     <div class="user-dropdown">
 
                         <a asp-area="Identity" asp-page="/Account/Manage/Index" class="dropdown-item"><span class="mr-3"><i class="fa fa-building"></i></span> Profile</a>
+                        <a asp-area="" asp-controller="ClientBooking" asp-action="YourBooking" class="dropdown-item"><span class="mr-3"><i class="fas fa-tasks"></i></span> Your Booking</a>
                         <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "HomePage", new { area = "" })">
-                            <button href="#" type="submit" class="dropdown-item"><span class="mr-3"><i class="fa fa-power-off"></i></span>Logout</button>
+                            <button href="#" type="submit" class="dropdown-item"><span class="mr-3"><i class="fa fa-power-off"></i></span> Logout</button>
                         </form>
 
                     </div>

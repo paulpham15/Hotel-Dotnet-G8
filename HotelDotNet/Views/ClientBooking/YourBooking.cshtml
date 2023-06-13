@@ -1,0 +1,110 @@
+﻿@model IEnumerable<BookingListVM>
+@{
+    ViewData["Title"] = "Your Booking";
+}
+
+<div class="container">
+    @foreach (var booking in Model)
+    {
+        if (booking.Status)
+        {
+            <a asp-action="CheckOutComplete" asp-route-billId="@booking.Id"  class="request-details">
+                <div class="date">
+
+                    <h3 class="h3-your-booking">
+                        <i class="far fa-clock"></i> Date: @booking.CheckinDate
+                    </h3>
+
+                </div>
+                <div class="time">
+                    <div class="placeholder">
+                        <i class="fas fa-hourglass-half"></i>
+                        <p>Time</p>
+                    </div>
+                    <h3 class="h3-your-booking">10AM</h3>
+                </div>
+                <div class="company">
+                    <div class="placeholder">
+                        <i class="fas fa-building"></i>
+                        <p>Hotel Name</p>
+                    </div>
+                    <h3 class="h3-your-booking">@booking.HotelName</h3>
+                </div>
+                <div class="destination">
+                    <div class="placeholder">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Location</p>
+                    </div>
+                    <h3 class="h3-your-booking">HCM</h3>
+                </div>
+                <div class="live-stock">
+                    <div class="placeholder">
+                        <i class="fas fa-horse-head"></i>
+                        <p>People</p>
+                    </div>
+                    <h3 class="h3-your-booking">@booking.People</h3>
+                </div>
+                <div class="booking-status">
+                    <div class="placeholder">
+                        <i class="fas fa-question-circle"></i>
+                        <p>Booking Status</p>
+                    </div>
+                    <div class="label-active">
+                        <p>Confirmed</p>
+                    </div>
+                </div>
+            </a>
+        }
+        else
+        {
+            <a asp-action="VerifyPurcharsed" asp-route-billId="@booking.Id" class="request-details">
+                <div class="date">
+
+                    <h3 class="h3-your-booking">
+                        <i class="far fa-clock"></i>  Date: @booking.CheckinDate
+                    </h3>
+
+                </div>
+                <div class="time">
+                    <div class="placeholder">
+                        <i class="fas fa-hourglass-half"></i>
+                        <p>Time</p>
+                    </div>
+                    <h3 class="h3-your-booking">10AM</h3>
+                </div>
+                <div class="company">
+                    <div class="placeholder">
+                        <i class="fas fa-building"></i>
+                        <p>Hotel Name</p>
+                    </div>
+                    <h3 class="h3-your-booking">@booking.HotelName</h3>
+                </div>
+                <div class="destination">
+                    <div class="placeholder">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Location</p>
+                    </div>
+                    <h3 class="h3-your-booking">HCM</h3>
+                </div>
+                <div class="live-stock">
+                    <div class="placeholder">
+                        <i class="fas fa-horse-head"></i>
+                        <p>People</p>
+                    </div>
+                    <h3 class="h3-your-booking">@booking.People</h3>
+                </div>
+                <div class="booking-status">
+                    <div class="placeholder">
+                        <i class="fas fa-question-circle"></i>
+                        <p>Booking Status</p>
+                    </div>
+                    <div class="label">
+                        <p>pending</p>
+                    </div>
+                </div>
+            </a>
+        }
+
+    }
+
+</div>

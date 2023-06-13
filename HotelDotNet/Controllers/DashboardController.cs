@@ -2,9 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using HotelDotNet.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace HotelDotNet.Controllers
 {
@@ -12,9 +15,21 @@ namespace HotelDotNet.Controllers
     [Authorize(Roles = "Admin")]
     public class DashboardController : Controller
     {
-        // GET: Dashboard
-        public ActionResult Index()
+        private readonly ApplicationDbContext _context;
+        private readonly IMapper mapper;
+
+        public DashboardController(ApplicationDbContext context, IMapper mapper)
         {
+            _context = context;
+            this.mapper = mapper;
+        }
+        // GET: Dashboard
+        public async Task<IActionResult> Index()
+        {
+            ViewBag.Data = JsonConvert.SerializeObject(_context.Hotels.Select(prop => new {
+                label =prop.Name,
+                y = prop.NumberOfBooking
+            }).ToList());
             return View();
         }
 

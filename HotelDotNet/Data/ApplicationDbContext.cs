@@ -32,6 +32,7 @@ namespace HotelDotNet.Data
         public DbSet<OrderHeader> OrderHeaders { get; set; }
         public DbSet<Booking> Booking { get; set; }
         public DbSet<HotelLocation> Locations { get; set; }
+        public DbSet<Report> Reports { get; set; }
 
     }
-    }
+}

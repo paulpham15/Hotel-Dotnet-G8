@@ -6,20 +6,40 @@
 }
 
 <div class="row form-login-container">
-    <div class="overlay">
+    <div class="overlay login-form" id="login-form-home">
+        <header class="head-form">
+
+            <h2>Log In</h2>
+            <!--     A welcome message or an explanation of the login form -->
+            <p>login here using your username and password</p>
+
+        </header>
+        <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+            <div>
+                <p>
+                    @foreach (var provider in Model.ExternalLogins)
+                    {
+                        <button type="submit" name="provider" value="@provider.Name" class="button-google">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                    <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" fill="red"></path>
+                                </svg>
+                            </div>
+                            <p>Google Sign In</p>
+                        </button>
+                        
+                    }
+                </p>
+            </div>
+        </form>
         <!-- LOGN IN FORM by Omar Dsoky -->
-        <form class="login-form" id="login-form-home" method="post">
+        <form method="post">
             <!--   con = Container  for items in the form-->
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="con">
                 <!--     Start  header Content  -->
-                <header class="head-form">
-                    <h2>Log In</h2>
-                    <!--     A welcome message or an explanation of the login form -->
-                    <p>login here using your username and password</p>
-                </header>
                 @*<p>@TempData["Success"]</p>
-                    <input class="form-input-login" id="messe" type="text" value="@TempData["Success"]">*@
+                <input class="form-input-login" id="messe" type="text" value="@TempData["Success"]">*@
 
                 <div class="field-set">
 
@@ -48,8 +68,8 @@
                     </div>
 
                     @*<div>
-                            <span asp-validation-for="Input.Password" class="text-danger"></span>
-                        </div>*@
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>*@
 
                     <!--      Show/hide password  -->
                     <!--        buttons -->
@@ -63,6 +83,7 @@
                         </div>
                     </div>
                     <button type="submit" class="log-in login-form-button"> Log In </button>
+
                 </div>
 
                 <!--   other buttons -->

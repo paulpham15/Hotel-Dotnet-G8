@@ -13,13 +13,13 @@
             <fieldset>
                 <legend>How long you stay</legend>
                 <input type="button" value="-" class="decrease-button" />
-                <input  readonly="readonly" type="text" id="input-booking-stay" class="input-homepage" value="0" name="day" />
+                <input  readonly="readonly" type="text" id="input-booking-stay" class="input-homepage" value="1" name="day" />
                 <input type="button" value="+" class="increase-button" />
             </fieldset>
             <fieldset>
                 <legend>How many people:</legend>
                 <input type="button" value="-" class="decrease-button" />
-                <input  readonly="readonly" type="text" class="input-homepage" id="input-booking-people" name="people" value="0" />
+                <input  readonly="readonly" type="text" class="input-homepage" id="input-booking-people" name="people" value="1" />
                 <input type="button" value="+" class="increase-button" />
             </fieldset>
             <fieldset>
@@ -141,11 +141,19 @@
         <div>
             @if (hotelKingBed.HotelPicture != null && hotelKingBed.HotelPicture.Length > 0)
             {
-                <img asp-controller="Homepage" asp-action="HotelDetail" asp-route-id="@hotelKingBed.Id" class="image-slider" src="@hotelKingBed.HotelPicture">
+                <a asp-controller="Homepage" asp-action="HotelDetail" asp-route-id="@hotelKingBed.Id">
+                    <img class="image-slider" src="@hotelKingBed.HotelPicture">
+                    <p>@hotelKingBed.Name</p>
+                    <p>@hotelKingBed.Location</p>
+                </a>
             }
             else
             {
-                <img asp-controller="Homepage" asp-action="HotelDetail" asp-route-id="@hotelKingBed.Id" class="image-slider" src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930">
+                <a asp-controller="Homepage" asp-action="HotelDetail" asp-route-id="@hotelKingBed.Id">
+                    <img class="image-slider" src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930">
+                    <p class="hotel-slider-title">@hotelKingBed.Name</p>
+                    <p class="hotel-slider-location">@hotelKingBed.Location</p>
+                </a>
             }
 
         </div>
@@ -170,6 +178,6 @@
             What a great trip with my family and
             I should try again next time soon ...
         </p>
-        <button type="submit" class="button-survey-hotel" style="width: 210px;">Read Their Story</button>
+        <a asp-area="" asp-controller="HomePage" asp-action="Explore"  class="button-survey-hotel" style="width: 210px; color:white;line-height:45px;">Read Their Story</a>
     </div>
 </div>

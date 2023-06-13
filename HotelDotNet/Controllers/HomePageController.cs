@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Org.BouncyCastle.Asn1.Ocsp;
+using static Amazon.S3.Util.S3EventNotification;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -27,7 +28,41 @@ namespace HotelDotNet.Controllers
             this.hotelRespository = hotelRespository;
 
         }
+        public async Task<IActionResult> Explore()
+        {
 
+            return View();
+
+        }
+        public async Task<IActionResult> ContactUs()
+        {
+
+            return View();
+
+        }
+        [HttpPost]
+        public async Task<IActionResult> ContactUs(string email, int phonenumber, string name, string subject, string note)
+        {
+            var report = new Report
+            {
+                Email = email,
+                PhoneNumber = phonenumber,
+                Name = name,
+                Subject = subject,
+                Note = note,
+            };
+            if (ModelState.IsValid)
+            {
+                await context.AddAsync(report);
+                await context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Send Contact Success";
+                return RedirectToAction("Index");
+            }
+           
+          
+            return View(report);
+
+        }
         // GET: /<controller>/
         public async Task<IActionResult> Index()
         {

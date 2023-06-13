@@ -368,6 +368,36 @@ namespace HotelDotNet.Data.Migrations
                     b.ToTable("OrderHeaders");
                 });
 
+            modelBuilder.Entity("HotelDotNet.Data.Report", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Note")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("PhoneNumber")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Subject")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Reports");
+                });
+
             modelBuilder.Entity("HotelDotNet.Data.Room", b =>
                 {
                     b.Property<int>("Id")
@@ -568,7 +598,7 @@ namespace HotelDotNet.Data.Migrations
                         {
                             Id = "408aa945-3d84-4421-8342-7269ec64d949",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b2b68162-6969-471b-a98b-bdf0bac2da3f",
+                            ConcurrencyStamp = "6fcfc413-2ced-45d5-b199-a80b3481a9c7",
                             Email = "admin@localhost.com",
                             EmailConfirmed = true,
                             Firstname = "System",
@@ -576,9 +606,9 @@ namespace HotelDotNet.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEHtcBr8CVtXQo+8PoYXZKiA1WGyDtaLz5ntmv8jRHKWqKXA3I92vgM0SzEothUxh4A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEHQen1bwLFRqKUZmJ9QH+zxHgXPY2LxXEcBS4gMxCeXBNYtOCzswGKBIZFwPYBhjuA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "eeb8162d-aa74-4b33-8ca6-d4bd09ab6b90",
+                            SecurityStamp = "a26c48be-fba5-45c1-88f0-5e11bcdd5a71",
                             TwoFactorEnabled = false,
                             UserName = "admin@localhost.com"
                         },
@@ -586,7 +616,7 @@ namespace HotelDotNet.Data.Migrations
                         {
                             Id = "3f4631bd-f907-4409-b416-ba356312e659",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "88cfc40a-a0e3-49d0-8ee5-a4d541152773",
+                            ConcurrencyStamp = "24ea6239-fb8a-484b-9f5d-ef506e84379e",
                             Email = "user@localhost.com",
                             EmailConfirmed = true,
                             Firstname = "System",
@@ -594,9 +624,9 @@ namespace HotelDotNet.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LOCALHOST.COM",
                             NormalizedUserName = "USER@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEMZteIyyP0FMHJvbjEFyJuTvZb/vPan/Rps8T4EFVbUEQiy37Fi8vjLP6ZHZdPTZBA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEEwkzbizoRjubfPNo54gw8CKXnOUaTcDvkCNJSTML7vp4xoDI2Kwdc0GVU5g63TL+Q==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4a872af8-44c4-47b7-937e-21e7c761c9a0",
+                            SecurityStamp = "72b6b161-1a7c-4ba1-8699-377aed411fb5",
                             TwoFactorEnabled = false,
                             UserName = "user@localhost.com"
                         });
@@ -631,14 +661,14 @@ namespace HotelDotNet.Data.Migrations
                         new
                         {
                             Id = "cac43a6e-f7bb-4448-baaf-1add431ccbbf",
-                            ConcurrencyStamp = "86b0665d-e020-4a41-b16f-fcddb20f24f5",
+                            ConcurrencyStamp = "4388fd44-9857-4d73-b489-b098f854cfca",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "cac43a7e-f7cb-4148-baaf-1acb431eabbf",
-                            ConcurrencyStamp = "fa68f21f-fc67-4b27-9860-b3d1fa8ae7f0",
+                            ConcurrencyStamp = "76c8f59d-b3bf-4eda-bef0-fa1d51196059",
                             Name = "User",
                             NormalizedName = "USER"
                         });

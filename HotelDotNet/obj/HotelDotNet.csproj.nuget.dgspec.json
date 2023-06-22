@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/paul/Projects/HotelDotNet/HotelDotNet/HotelDotNet.csproj": {}
+    "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/HotelDotNet.csproj": {}
   },
   "projects": {
-    "/Users/paul/Projects/HotelDotNet/HotelDotNet/HotelDotNet.csproj": {
+    "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/HotelDotNet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/paul/Projects/HotelDotNet/HotelDotNet/HotelDotNet.csproj",
+        "projectUniqueName": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/HotelDotNet.csproj",
         "projectName": "HotelDotNet",
-        "projectPath": "/Users/paul/Projects/HotelDotNet/HotelDotNet/HotelDotNet.csproj",
+        "projectPath": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/HotelDotNet.csproj",
         "packagesPath": "/Users/paul/.nuget/packages/",
-        "outputPath": "/Users/paul/Projects/HotelDotNet/HotelDotNet/obj/",
+        "outputPath": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/paul/.nuget/NuGet/NuGet.Config"
@@ -20,6 +20,7 @@
           "net6.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.302/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,6 +50,26 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "BarCode": {
+              "target": "Package",
+              "version": "[2023.4.1, )"
+            },
+            "Bootstrap.v3.Datetimepicker": {
+              "target": "Package",
+              "version": "[4.17.49, )"
+            },
+            "Bootstrap.v3.Datetimepicker.CSS": {
+              "target": "Package",
+              "version": "[4.17.49, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[6.0.16, )"
             },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
@@ -82,6 +103,14 @@
               "target": "Package",
               "version": "[6.0.13, )"
             },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "QRCoder-ImageSharp": {
+              "target": "Package",
+              "version": "[0.9.0, )"
+            },
             "Syncfusion.EJ2.AspNet.Core": {
               "target": "Package",
               "version": "[21.2.6, )"
@@ -110,7 +139,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,117 @@
+﻿<Properties StartupConfiguration="{204B54FC-86D2-457F-9D06-E7FD0FD2E89E}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.HotelDotNet PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HotelDotNet/Views/HomePage/Index.cshtml">
+    <Files>
+      <File FileName="HotelDotNet/wwwroot/css/homepage.css" />
+      <File FileName="HotelDotNet/Views/HomePage/HotelDetail.cshtml" />
+      <File FileName="HotelDotNet/Views/Shared/_UserLayout.cshtml" />
+      <File FileName="HotelDotNet/wwwroot/js/site.js" />
+      <File FileName="HotelDotNet/wwwroot/js/custom.js" />
+      <File FileName="HotelDotNet/wwwroot/js/dashboard1.js" />
+      <File FileName="HotelDotNet/wwwroot/js/app-style-switcher.js" />
+      <File FileName="HotelDotNet/wwwroot/js/waves.js" />
+      <File FileName="HotelDotNet/Areas/Identity/Pages/Account/Login.cshtml" />
+      <File FileName="HotelDotNet/Areas/Identity/Pages/Account/Login.cshtml.cs" />
+      <File FileName="HotelDotNet/Controllers/ClientBookingController.cs" />
+      <File FileName="HotelDotNet/Views/Shared/_LoginPartial.cshtml" />
+      <File FileName="HotelDotNet/Areas/Identity/Pages/Account/Register.cshtml" />
+      <File FileName="HotelDotNet/Areas/Identity/Pages/Account/Register.cshtml.cs" />
+      <File FileName="HotelDotNet/Areas/Identity/Pages/_ViewImports.cshtml" />
+      <File FileName="HotelDotNet/Settings/EmailSender.cs" />
+      <File FileName="HotelDotNet/Program.cs" />
+      <File FileName="HotelDotNet/Contracts/IHotelRespository.cs" />
+      <File FileName="HotelDotNet/Controllers/HomePageController.cs" />
+      <File FileName="HotelDotNet/Controllers/HotelListController.cs" />
+      <File FileName="HotelDotNet/Controllers/HotelController.cs" />
+      <File FileName="HotelDotNet/Views/ClientBooking/CheckOutComplete.cshtml" />
+      <File FileName="HotelDotNet/Views/ClientBooking/VerifyPurcharsed.cshtml" />
+      <File FileName="HotelDotNet/Areas/Admin/Views/Dashboard/Index.cshtml" />
+      <File FileName="HotelDotNet/Areas/Admin/Views/Booking/Edit.cshtml" />
+      <File FileName="HotelDotNet/Areas/Admin/Views/Booking/Index.cshtml" />
+      <File FileName="HotelDotNet/Controllers/BookingController.cs" />
+      <File FileName="HotelDotNet/Areas/Admin/Views/Hotel/Index.cshtml" />
+      <File FileName="HotelDotNet/Models/BookingCreateVM.cs" />
+      <File FileName="HotelDotNet/Models/BookingVM.cs" />
+      <File FileName="HotelDotNet/Models/BookingListVM.cs" />
+      <File FileName="HotelDotNet/Data/Booking.cs" />
+      <File FileName="HotelDotNet/Views/ClientBooking/Booking.cshtml" />
+      <File FileName="HotelDotNet/Areas/Admin/Views/Booking/Details.cshtml" />
+      <File FileName="HotelDotNet/Areas/Admin/Views/Hotel/Create.cshtml" />
+      <File FileName="HotelDotNet/Areas/Admin/Views/Booking/Create.cshtml" />
+      <File FileName="HotelDotNet/Respositories/HotelRepository.cs" />
+      <File FileName="HotelDotNet/Respositories/BookingRepository.cs" />
+      <File FileName="HotelDotNet/Respositories/GenericRepository.cs" />
+      <File FileName="HotelDotNet/Configurations/MapperConfig.cs" />
+      <File FileName="HotelDotNet/Controllers/DashboardController.cs" />
+      <File FileName="HotelDotNet/wwwroot/css/site.css" />
+      <File FileName="HotelDotNet/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml" />
+      <File FileName="HotelDotNet/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml.cs" />
+      <File FileName="HotelDotNet/Areas/Identity/Pages/Account/ConfirmEmail.cshtml.cs" />
+      <File FileName="HotelDotNet/Areas/Identity/Pages/Account/ConfirmEmail.cshtml" />
+      <File FileName="HotelDotNet/Models/VerifyPurchasedVM.cs" />
+      <File FileName="HotelDotNet/Views/ClientBooking/YourBooking.cshtml" />
+      <File FileName="HotelDotNet/wwwroot/css/yourbooking.css" />
+      <File FileName="HotelDotNet/wwwroot/css/style.min.css" />
+      <File FileName="HotelDotNet/Controllers/RoomAllocationController.cs" />
+      <File FileName="HotelDotNet/Controllers/RoomTypeController.cs" />
+      <File FileName="HotelDotNet/Views/HomePage/Explore.cshtml" />
+      <File FileName="HotelDotNet/Views/HomePage/Index.cshtml" Line="163" Column="55" />
+      <File FileName="HotelDotNet/Views/HomePage/ContactUs.cshtml" />
+      <File FileName="HotelDotNet/Areas/Admin/Views/Shared/_AdminLayout.cshtml" />
+      <File FileName="HotelDotNet/Data/Report.cs" />
+      <File FileName="HotelDotNet/Data/Room.cs" />
+      <File FileName="HotelDotNet/Data/ApplicationDbContext.cs" />
+      <File FileName="HotelDotNet/Data/OrderDetail.cs" />
+      <File FileName="HotelDotNet/Data/OrderHeader.cs" />
+      <File FileName="HotelDotNet/Controllers/ReportController.cs" />
+      <File FileName="HotelDotNet/Areas/Admin/Views/Hotel/Edit.cshtml" />
+      <File FileName="HotelDotNet/Models/HotelVM.cs" />
+      <File FileName="HotelDotNet/Models/HotelListVM.cs" />
+      <File FileName="HotelDotNet/Models/HotelEditVM.cs" />
+      <File FileName="HotelDotNet/Areas/Admin/Views/RoomAllocation/Edit.cshtml" />
+      <File FileName="HotelDotNet/Data/Hotel.cs" />
+      <File FileName="HotelDotNet/Controllers/ErrorController.cs" />
+      <File FileName="HotelDotNet/Areas/Admin/Views/Hotel/CreateRoom.cshtml" />
+      <File FileName="HotelDotNet/Areas/Admin/Views/Hotel/Delete.cshtml" />
+      <File FileName="HotelDotNet/Models/HomePageListVM.cs" />
+      <File FileName="HotelDotNet/Views/HotelList/Index.cshtml" />
+      <File FileName="HotelDotNet/Areas/Identity/Pages/Account/ExternalLogin.cshtml.cs" />
+      <File FileName="HotelDotNet/Areas/Identity/Pages/Account/ExternalLogin.cshtml" />
+      <File FileName="HotelDotNet/Settings/MailSettings.cs" />
+      <File FileName="HotelDotNet/Areas/Identity/Pages/Account/Manage/Index.cshtml" />
+      <File FileName="HotelDotNet/Areas/Identity/Pages/Account/Manage/Index.cshtml.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HotelDotNet" expanded="True">
+            <Node name="HotelDotNet" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True" />
+              </Node>
+              <Node name="Configurations" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Respositories" expanded="True" />
+              <Node name="Settings" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="HomePage" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

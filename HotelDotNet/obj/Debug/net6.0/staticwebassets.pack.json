@@ -1,964 +1,1148 @@
 {
   "Files": [
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/obj/Debug/net6.0/scopedcss/projectbundle/HotelDotNet.bundle.scp.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/obj/Debug/net6.0/scopedcss/projectbundle/HotelDotNet.bundle.scp.css",
       "PackagePath": "staticwebassets/HotelDotNet.bundle.scp.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/.DS_Store",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/.DS_Store",
       "PackagePath": "staticwebassets/.DS_Store"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/.DS_Store",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/.DS_Store",
       "PackagePath": "staticwebassets/css/.DS_Store"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/fonthome.css",
-      "PackagePath": "staticwebassets/css/fonthome.css"
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/homepage.css",
+      "PackagePath": "staticwebassets/css/homepage.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/.DS_Store",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/.DS_Store",
       "PackagePath": "staticwebassets/css/icons/.DS_Store"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/.DS_Store",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/.DS_Store",
       "PackagePath": "staticwebassets/css/icons/font-awesome/.DS_Store"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/css/fa-brands.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/css/fa-brands.css",
       "PackagePath": "staticwebassets/css/icons/font-awesome/css/fa-brands.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/css/fa-brands.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/css/fa-brands.min.css",
       "PackagePath": "staticwebassets/css/icons/font-awesome/css/fa-brands.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/css/fa-regular.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/css/fa-regular.css",
       "PackagePath": "staticwebassets/css/icons/font-awesome/css/fa-regular.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/css/fa-regular.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/css/fa-regular.min.css",
       "PackagePath": "staticwebassets/css/icons/font-awesome/css/fa-regular.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/css/fa-solid.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/css/fa-solid.css",
       "PackagePath": "staticwebassets/css/icons/font-awesome/css/fa-solid.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/css/fa-solid.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/css/fa-solid.min.css",
       "PackagePath": "staticwebassets/css/icons/font-awesome/css/fa-solid.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/css/fontawesome-all.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/css/fontawesome-all.css",
       "PackagePath": "staticwebassets/css/icons/font-awesome/css/fontawesome-all.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/css/fontawesome-all.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/css/fontawesome-all.min.css",
       "PackagePath": "staticwebassets/css/icons/font-awesome/css/fontawesome-all.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/css/fontawesome.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/css/fontawesome.css",
       "PackagePath": "staticwebassets/css/icons/font-awesome/css/fontawesome.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/css/fontawesome.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/css/fontawesome.min.css",
       "PackagePath": "staticwebassets/css/icons/font-awesome/css/fontawesome.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/_animated.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/_animated.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/_animated.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/_bordered-pulled.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/_bordered-pulled.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/_bordered-pulled.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/_core.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/_core.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/_core.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/_fixed-width.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/_fixed-width.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/_fixed-width.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/_icons.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/_icons.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/_icons.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/_larger.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/_larger.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/_larger.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/_list.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/_list.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/_list.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/_mixins.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/_mixins.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/_mixins.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/_rotated-flipped.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/_rotated-flipped.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/_rotated-flipped.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/_screen-reader.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/_screen-reader.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/_screen-reader.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/_stacked.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/_stacked.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/_stacked.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/_variables.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/_variables.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/_variables.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/fa-brands.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/fa-brands.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/fa-brands.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/fa-regular.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/fa-regular.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/fa-regular.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/fa-solid.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/fa-solid.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/fa-solid.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/less/fontawesome.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/less/fontawesome.less",
       "PackagePath": "staticwebassets/css/icons/font-awesome/less/fontawesome.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_animated.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_animated.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/_animated.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_bordered-pulled.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_bordered-pulled.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/_bordered-pulled.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_core.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_core.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/_core.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_fixed-width.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_fixed-width.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/_fixed-width.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_icons.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_icons.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/_icons.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_larger.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_larger.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/_larger.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_list.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_list.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/_list.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_mixins.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_mixins.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/_mixins.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_rotated-flipped.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_rotated-flipped.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/_rotated-flipped.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_screen-reader.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_screen-reader.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/_screen-reader.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_stacked.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_stacked.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/_stacked.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_variables.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/_variables.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/_variables.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/fa-brands.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/fa-brands.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/fa-brands.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/fa-regular.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/fa-regular.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/fa-regular.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/fa-solid.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/fa-solid.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/fa-solid.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/scss/fontawesome.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/scss/fontawesome.scss",
       "PackagePath": "staticwebassets/css/icons/font-awesome/scss/fontawesome.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-brands-400.eot",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-brands-400.eot",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-brands-400.eot"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-brands-400.svg",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-brands-400.svg",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-brands-400.svg"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-brands-400.ttf",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-brands-400.ttf",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-brands-400.ttf"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-brands-400.woff",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-brands-400.woff",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-brands-400.woff"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-brands-400.woff2",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-brands-400.woff2",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-brands-400.woff2"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-regular-400.eot",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-regular-400.eot",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-regular-400.eot"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-regular-400.svg",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-regular-400.svg",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-regular-400.svg"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-regular-400.ttf",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-regular-400.ttf",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-regular-400.ttf"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-regular-400.woff",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-regular-400.woff",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-regular-400.woff"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-regular-400.woff2",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-regular-400.woff2",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-regular-400.woff2"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-solid-900.eot",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-solid-900.eot",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-solid-900.eot"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-solid-900.svg",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-solid-900.svg",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-solid-900.svg"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-solid-900.ttf",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-solid-900.ttf",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-solid-900.ttf"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-solid-900.woff",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-solid-900.woff",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-solid-900.woff"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-solid-900.woff2",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/font-awesome/webfonts/fa-solid-900.woff2",
       "PackagePath": "staticwebassets/css/icons/font-awesome/webfonts/fa-solid-900.woff2"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/.DS_Store",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/.DS_Store",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/.DS_Store"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/css/material-design-iconic-font.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/css/material-design-iconic-font.css",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/css/material-design-iconic-font.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/css/material-design-iconic-font.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/css/material-design-iconic-font.min.css",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/css/material-design-iconic-font.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/css/materialdesignicons.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/css/materialdesignicons.min.css",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/css/materialdesignicons.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2",
       "PackagePath": "staticwebassets/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/themify-icons/.DS_Store",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/themify-icons/.DS_Store",
       "PackagePath": "staticwebassets/css/icons/themify-icons/.DS_Store"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/themify-icons/fonts/themify.eot",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/themify-icons/fonts/themify.eot",
       "PackagePath": "staticwebassets/css/icons/themify-icons/fonts/themify.eot"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/themify-icons/fonts/themify.svg",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/themify-icons/fonts/themify.svg",
       "PackagePath": "staticwebassets/css/icons/themify-icons/fonts/themify.svg"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/themify-icons/fonts/themify.ttf",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/themify-icons/fonts/themify.ttf",
       "PackagePath": "staticwebassets/css/icons/themify-icons/fonts/themify.ttf"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/themify-icons/fonts/themify.woff",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/themify-icons/fonts/themify.woff",
       "PackagePath": "staticwebassets/css/icons/themify-icons/fonts/themify.woff"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/themify-icons/ie7/ie7.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/themify-icons/ie7/ie7.css",
       "PackagePath": "staticwebassets/css/icons/themify-icons/ie7/ie7.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/themify-icons/ie7/ie7.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/themify-icons/ie7/ie7.js",
       "PackagePath": "staticwebassets/css/icons/themify-icons/ie7/ie7.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/themify-icons/themify-icons.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/themify-icons/themify-icons.css",
       "PackagePath": "staticwebassets/css/icons/themify-icons/themify-icons.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/themify-icons/themify-icons.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/themify-icons/themify-icons.less",
       "PackagePath": "staticwebassets/css/icons/themify-icons/themify-icons.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/.DS_Store",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/.DS_Store",
       "PackagePath": "staticwebassets/css/icons/weather-icons/.DS_Store"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/css/weather-icons-core.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/css/weather-icons-core.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/css/weather-icons-core.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/css/weather-icons-variables.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/css/weather-icons-variables.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/css/weather-icons-variables.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/css/weather-icons-wind.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/css/weather-icons-wind.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/css/weather-icons-wind.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/css/weather-icons-wind.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/css/weather-icons-wind.min.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/css/weather-icons-wind.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/css/weather-icons.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/css/weather-icons.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/css/weather-icons.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/css/weather-icons.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/css/weather-icons.min.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/css/weather-icons.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/fonts/weathericons-regular-webfont.eot",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/fonts/weathericons-regular-webfont.eot",
       "PackagePath": "staticwebassets/css/icons/weather-icons/fonts/weathericons-regular-webfont.eot"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/fonts/weathericons-regular-webfont.svg",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/fonts/weathericons-regular-webfont.svg",
       "PackagePath": "staticwebassets/css/icons/weather-icons/fonts/weathericons-regular-webfont.svg"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/fonts/weathericons-regular-webfont.ttf",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/fonts/weathericons-regular-webfont.ttf",
       "PackagePath": "staticwebassets/css/icons/weather-icons/fonts/weathericons-regular-webfont.ttf"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/fonts/weathericons-regular-webfont.woff",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/fonts/weathericons-regular-webfont.woff",
       "PackagePath": "staticwebassets/css/icons/weather-icons/fonts/weathericons-regular-webfont.woff"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/fonts/weathericons-regular-webfont.woff2",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/fonts/weathericons-regular-webfont.woff2",
       "PackagePath": "staticwebassets/css/icons/weather-icons/fonts/weathericons-regular-webfont.woff2"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-beaufort.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-beaufort.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/css/variables-beaufort.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-day.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-day.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/css/variables-day.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-direction.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-direction.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/css/variables-direction.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-misc.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-misc.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/css/variables-misc.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-moon.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-moon.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/css/variables-moon.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-neutral.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-neutral.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/css/variables-neutral.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-night.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-night.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/css/variables-night.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-time.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-time.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/css/variables-time.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-wind-names.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/css/variables-wind-names.css",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/css/variables-wind-names.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-beaufort.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-beaufort.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-classes/classes-beaufort.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-day.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-day.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-classes/classes-day.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-direction.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-direction.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-classes/classes-direction.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-misc.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-misc.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-classes/classes-misc.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-moon-aliases.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-moon-aliases.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-classes/classes-moon-aliases.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-moon.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-moon.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-classes/classes-moon.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-neutral.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-neutral.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-classes/classes-neutral.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-night.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-night.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-classes/classes-night.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-time.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-time.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-classes/classes-time.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-wind-aliases.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-wind-aliases.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-classes/classes-wind-aliases.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-wind-degrees.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-wind-degrees.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-classes/classes-wind-degrees.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-wind.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-classes/classes-wind.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-classes/classes-wind.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-beaufort.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-beaufort.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-variables/variables-beaufort.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-day.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-day.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-variables/variables-day.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-direction.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-direction.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-variables/variables-direction.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-misc.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-misc.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-variables/variables-misc.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-moon.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-moon.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-variables/variables-moon.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-neutral.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-neutral.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-variables/variables-neutral.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-night.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-night.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-variables/variables-night.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-time.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-time.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-variables/variables-time.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-wind-names.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/icon-variables/variables-wind-names.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/icon-variables/variables-wind-names.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/mappings/wi-forecast-io.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/mappings/wi-forecast-io.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/mappings/wi-forecast-io.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/mappings/wi-owm.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/mappings/wi-owm.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/mappings/wi-owm.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/mappings/wi-wmo4680.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/mappings/wi-wmo4680.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/mappings/wi-wmo4680.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/mappings/wi-yahoo.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/mappings/wi-yahoo.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/mappings/wi-yahoo.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons-classes.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons-classes.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/weather-icons-classes.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons-core.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons-core.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/weather-icons-core.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons-variables.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons-variables.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/weather-icons-variables.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons-wind.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons-wind.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/weather-icons-wind.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons-wind.min.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons-wind.min.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/weather-icons-wind.min.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/weather-icons.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons.min.less",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/less/weather-icons.min.less",
       "PackagePath": "staticwebassets/css/icons/weather-icons/less/weather-icons.min.less"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-beaufort.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-beaufort.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-classes/classes-beaufort.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-day.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-day.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-classes/classes-day.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-direction.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-direction.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-classes/classes-direction.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-misc.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-misc.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-classes/classes-misc.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-moon-aliases.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-moon-aliases.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-classes/classes-moon-aliases.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-moon.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-moon.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-classes/classes-moon.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-neutral.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-neutral.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-classes/classes-neutral.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-night.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-night.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-classes/classes-night.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-time.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-time.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-classes/classes-time.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-wind-aliases.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-wind-aliases.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-classes/classes-wind-aliases.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-wind-degrees.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-wind-degrees.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-classes/classes-wind-degrees.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-wind.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-classes/classes-wind.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-classes/classes-wind.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-beaufort.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-beaufort.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-variables/variables-beaufort.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-day.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-day.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-variables/variables-day.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-direction.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-direction.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-variables/variables-direction.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-misc.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-misc.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-variables/variables-misc.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-moon.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-moon.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-variables/variables-moon.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-neutral.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-neutral.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-variables/variables-neutral.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-night.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-night.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-variables/variables-night.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-time.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-time.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-variables/variables-time.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-wind-names.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/icon-variables/variables-wind-names.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/icon-variables/variables-wind-names.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/mappings/wi-forecast-io.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/mappings/wi-forecast-io.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/mappings/wi-forecast-io.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/mappings/wi-owm.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/mappings/wi-owm.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/mappings/wi-owm.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/mappings/wi-wmo4680.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/mappings/wi-wmo4680.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/mappings/wi-wmo4680.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/mappings/wi-yahoo.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/mappings/wi-yahoo.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/mappings/wi-yahoo.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons-classes.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons-classes.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/weather-icons-classes.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons-core.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons-core.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/weather-icons-core.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons-variables.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons-variables.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/weather-icons-variables.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons-wind.min.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons-wind.min.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/weather-icons-wind.min.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons-wind.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons-wind.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/weather-icons-wind.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons.min.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons.min.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/weather-icons.min.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons.scss",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/icons/weather-icons/sass/weather-icons.scss",
       "PackagePath": "staticwebassets/css/icons/weather-icons/sass/weather-icons.scss"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/site.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/css/style.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/style.min.css",
       "PackagePath": "staticwebassets/css/style.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/home.ico",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/css/yourbooking.css",
+      "PackagePath": "staticwebassets/css/yourbooking.css"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/home.ico",
       "PackagePath": "staticwebassets/home.ico"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/img/HotelImg/100e2f37-759f-4acc-bdcf-9054020d912c_ads facebook - Việc Làm Tại Nhật.png",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/.DS_Store",
+      "PackagePath": "staticwebassets/img/.DS_Store"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/03de86cb-28c5-4bc6-9420-6e8d6d9f3e93_christopher-jolly-GqbU78bdJFM-unsplash.jpg",
+      "PackagePath": "staticwebassets/img/HotelImg/03de86cb-28c5-4bc6-9420-6e8d6d9f3e93_christopher-jolly-GqbU78bdJFM-unsplash.jpg"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/100e2f37-759f-4acc-bdcf-9054020d912c_ads facebook - Việc Làm Tại Nhật.png",
       "PackagePath": "staticwebassets/img/HotelImg/100e2f37-759f-4acc-bdcf-9054020d912c_ads facebook - Việc Làm Tại Nhật.png"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/img/HotelImg/45836950-1130-4b65-9ef6-cea5266979f4_ads facebook - Việc Làm Tại Nhật.png",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/25df1659-f2f1-4642-bf98-8e33c33eeba8_banner.png",
+      "PackagePath": "staticwebassets/img/HotelImg/25df1659-f2f1-4642-bf98-8e33c33eeba8_banner.png"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/33991d52-a586-4292-97e0-dae309f05dd4_edvin-johansson-rlwE8f8anOc-unsplash.jpg",
+      "PackagePath": "staticwebassets/img/HotelImg/33991d52-a586-4292-97e0-dae309f05dd4_edvin-johansson-rlwE8f8anOc-unsplash.jpg"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/45836950-1130-4b65-9ef6-cea5266979f4_ads facebook - Việc Làm Tại Nhật.png",
       "PackagePath": "staticwebassets/img/HotelImg/45836950-1130-4b65-9ef6-cea5266979f4_ads facebook - Việc Làm Tại Nhật.png"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/img/HotelImg/5ee64526-79bb-4014-96bf-c4cf85de2011_1-3769-1460435947.jpg",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/4cc54940-b56b-44c6-b427-fa6e6dced56a_screencapture-localhost-7180-2023-05-23-16_29_28.png",
+      "PackagePath": "staticwebassets/img/HotelImg/4cc54940-b56b-44c6-b427-fa6e6dced56a_screencapture-localhost-7180-2023-05-23-16_29_28.png"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/5ee64526-79bb-4014-96bf-c4cf85de2011_1-3769-1460435947.jpg",
       "PackagePath": "staticwebassets/img/HotelImg/5ee64526-79bb-4014-96bf-c4cf85de2011_1-3769-1460435947.jpg"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/img/HotelImg/d331c810-ffbd-4627-a275-920dc94ee07c_ads facebook - Việc Làm Tại Nhật.png",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/64fb68c5-158f-4045-b4a9-a24877fd8c63_valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg",
+      "PackagePath": "staticwebassets/img/HotelImg/64fb68c5-158f-4045-b4a9-a24877fd8c63_valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/6eaac65f-05fe-4f48-8edd-dfebeb70f14e_antonio-janeski-VIGLnzEpOm4-unsplash.jpg",
+      "PackagePath": "staticwebassets/img/HotelImg/6eaac65f-05fe-4f48-8edd-dfebeb70f14e_antonio-janeski-VIGLnzEpOm4-unsplash.jpg"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/7e404154-50c5-491e-a59f-9135c2423657_fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg",
+      "PackagePath": "staticwebassets/img/HotelImg/7e404154-50c5-491e-a59f-9135c2423657_fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/9adaeca3-9f08-48c0-a4f6-052cdcd3cf8c_banner.png",
+      "PackagePath": "staticwebassets/img/HotelImg/9adaeca3-9f08-48c0-a4f6-052cdcd3cf8c_banner.png"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/9e47554b-614a-4ee7-9edb-4759b02d4748_kelsey-curtis--27u_GzlAFw-unsplash.jpg",
+      "PackagePath": "staticwebassets/img/HotelImg/9e47554b-614a-4ee7-9edb-4759b02d4748_kelsey-curtis--27u_GzlAFw-unsplash.jpg"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/cd095d5f-c093-455e-b5e4-457f94f6115b_christian-lambert-vmIWr0NnpCQ-unsplash.jpg",
+      "PackagePath": "staticwebassets/img/HotelImg/cd095d5f-c093-455e-b5e4-457f94f6115b_christian-lambert-vmIWr0NnpCQ-unsplash.jpg"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/d331c810-ffbd-4627-a275-920dc94ee07c_ads facebook - Việc Làm Tại Nhật.png",
       "PackagePath": "staticwebassets/img/HotelImg/d331c810-ffbd-4627-a275-920dc94ee07c_ads facebook - Việc Làm Tại Nhật.png"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/js/app-style-switcher.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/d97b6b45-1825-4629-adae-541820c7b38c_screencapture-localhost-7180-admin-Hotel-2023-05-23-16_29_56.png",
+      "PackagePath": "staticwebassets/img/HotelImg/d97b6b45-1825-4629-adae-541820c7b38c_screencapture-localhost-7180-admin-Hotel-2023-05-23-16_29_56.png"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/d9fca416-19ac-4ab0-89b8-bb8056433550_christopher-jolly-GqbU78bdJFM-unsplash.jpg",
+      "PackagePath": "staticwebassets/img/HotelImg/d9fca416-19ac-4ab0-89b8-bb8056433550_christopher-jolly-GqbU78bdJFM-unsplash.jpg"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/dae02c83-98fd-44a6-8509-8bb8552de7f2_christopher-jolly-GqbU78bdJFM-unsplash.jpg",
+      "PackagePath": "staticwebassets/img/HotelImg/dae02c83-98fd-44a6-8509-8bb8552de7f2_christopher-jolly-GqbU78bdJFM-unsplash.jpg"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/dd5a702d-767f-4c0c-b9f8-af644268f67f_meritt-thomas-HIEZBt6XRno-unsplash.jpg",
+      "PackagePath": "staticwebassets/img/HotelImg/dd5a702d-767f-4c0c-b9f8-af644268f67f_meritt-thomas-HIEZBt6XRno-unsplash.jpg"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/e7905215-8c97-4fa3-859f-a05868a6157f_kelsey-curtis--27u_GzlAFw-unsplash.jpg",
+      "PackagePath": "staticwebassets/img/HotelImg/e7905215-8c97-4fa3-859f-a05868a6157f_kelsey-curtis--27u_GzlAFw-unsplash.jpg"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/f0570da8-4468-42e4-9e44-8fe96e5989de_christopher-jolly-GqbU78bdJFM-unsplash.jpg",
+      "PackagePath": "staticwebassets/img/HotelImg/f0570da8-4468-42e4-9e44-8fe96e5989de_christopher-jolly-GqbU78bdJFM-unsplash.jpg"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/HotelImg/f334ad31-8b9d-41df-a129-8e454de4f414_G8.png",
+      "PackagePath": "staticwebassets/img/HotelImg/f334ad31-8b9d-41df-a129-8e454de4f414_G8.png"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/banner.png",
+      "PackagePath": "staticwebassets/img/banner.png"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/img/story-banner.png",
+      "PackagePath": "staticwebassets/img/story-banner.png"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/js/app-style-switcher.js",
       "PackagePath": "staticwebassets/js/app-style-switcher.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/js/custom.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/js/custom.js",
       "PackagePath": "staticwebassets/js/custom.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/js/sidebarmenu.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/js/dashboard1.js",
+      "PackagePath": "staticwebassets/js/dashboard1.js"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/js/sidebarmenu.js",
       "PackagePath": "staticwebassets/js/sidebarmenu.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/js/site.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/js/waves.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/js/waves.js",
       "PackagePath": "staticwebassets/js/waves.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/LICENSE",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/.DS_Store",
+      "PackagePath": "staticwebassets/lib/.DS_Store"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css",
+      "PackagePath": "staticwebassets/lib/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js",
+      "PackagePath": "staticwebassets/lib/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/chartist/.DS_Store",
+      "PackagePath": "staticwebassets/lib/chartist/.DS_Store"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/chartist/dist/chartist.min.css",
+      "PackagePath": "staticwebassets/lib/chartist/dist/chartist.min.css"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/chartist/dist/chartist.min.js",
+      "PackagePath": "staticwebassets/lib/chartist/dist/chartist.min.js"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery-1.9.1.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-1.9.1.min.js"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery-validation/LICENSE.md",
       "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/jquery/LICENSE.txt",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery.cookie-1.3.1.js",
+      "PackagePath": "staticwebassets/lib/jquery.cookie-1.3.1.js"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/jquery/dist/jquery.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery/dist/jquery.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery/dist/jquery.min.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "/Users/paul/Projects/HotelDotNet/HotelDotNet/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/modernizr-2.6.2.min.js",
+      "PackagePath": "staticwebassets/lib/modernizr-2.6.2.min.js"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/ajax-loader.gif",
+      "PackagePath": "staticwebassets/lib/slick/ajax-loader.gif"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/config.rb",
+      "PackagePath": "staticwebassets/lib/slick/config.rb"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/fonts/slick.eot",
+      "PackagePath": "staticwebassets/lib/slick/fonts/slick.eot"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/fonts/slick.scss",
+      "PackagePath": "staticwebassets/lib/slick/fonts/slick.scss"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/fonts/slick.svg",
+      "PackagePath": "staticwebassets/lib/slick/fonts/slick.svg"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/fonts/slick.ttf",
+      "PackagePath": "staticwebassets/lib/slick/fonts/slick.ttf"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/fonts/slick.woff",
+      "PackagePath": "staticwebassets/lib/slick/fonts/slick.woff"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/slick (copy).css",
+      "PackagePath": "staticwebassets/lib/slick/slick (copy).css"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/slick-theme.css",
+      "PackagePath": "staticwebassets/lib/slick/slick-theme.css"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/slick-theme.less",
+      "PackagePath": "staticwebassets/lib/slick/slick-theme.less"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/slick-theme.scss",
+      "PackagePath": "staticwebassets/lib/slick/slick-theme.scss"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/slick.css",
+      "PackagePath": "staticwebassets/lib/slick/slick.css"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/slick.js",
+      "PackagePath": "staticwebassets/lib/slick/slick.js"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/slick.less",
+      "PackagePath": "staticwebassets/lib/slick/slick.less"
+    },
+    {
+      "Id": "/Users/paul/Desktop/Hotel-Dotnet-G8/HotelDotNet/wwwroot/lib/slick/slick.min.js",
+      "PackagePath": "staticwebassets/lib/slick/slick.min.js"
     },
     {
       "Id": "obj/Debug/net6.0/staticwebassets/msbuild.HotelDotNet.Microsoft.AspNetCore.StaticWebAssets.props",

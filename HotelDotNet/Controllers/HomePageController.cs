@@ -5,11 +5,9 @@ using System.Threading.Tasks;
 using HotelDotNet.Contracts;
 using HotelDotNet.Data;
 using HotelDotNet.Models;
-using MailKit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Org.BouncyCastle.Asn1.Ocsp;
 using static Amazon.S3.Util.S3EventNotification;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860

@@ -59,18 +59,27 @@ namespace HotelDotNet.Areas.Identity.Pages.Account.Manage
             [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
+          
+            [Display(Name = "First Name")]
+            public string Firstname { get; set; }
+
+            [Display(Name = "Last Name")]
+            public string Lastname { get; set; }
         }
 
         private async Task LoadAsync(User user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
+        
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
 
             Username = userName;
 
             Input = new InputModel
             {
-                PhoneNumber = phoneNumber
+                PhoneNumber = phoneNumber,
+                Firstname = user.Firstname,
+                Lastname = user.Lastname,
             };
         }
 
@@ -93,13 +102,19 @@ namespace HotelDotNet.Areas.Identity.Pages.Account.Manage
             {
                 return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
             }
-
+           
             if (!ModelState.IsValid)
             {
                 await LoadAsync(user);
                 return Page();
             }
-
+            if (Input.Firstname != user.Firstname || Input.Lastname != user.Lastname)
+            {
+                user.Firstname = Input.Firstname;
+                user.Lastname = Input.Lastname;
+                await _userManager.UpdateAsync(user);
+                
+            }
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
             if (Input.PhoneNumber != phoneNumber)
             {
@@ -110,7 +125,7 @@ namespace HotelDotNet.Areas.Identity.Pages.Account.Manage
                     return RedirectToPage();
                 }
             }
-
+            
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";
             return RedirectToPage();

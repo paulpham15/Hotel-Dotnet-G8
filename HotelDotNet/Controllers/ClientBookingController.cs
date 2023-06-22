@@ -14,12 +14,11 @@ using System.Text;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using IronBarCode;
-using QRCoder;
 using static Amazon.S3.Util.S3EventNotification;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using System.Text.Encodings.Web;
 using Microsoft.AspNetCore.Authorization;
+using QRCoder;
 
 namespace HotelDotNet.Controllers
 {

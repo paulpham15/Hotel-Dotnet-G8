@@ -25,7 +25,7 @@
             <fieldset>
                 <legend>Location</legend>
                 <select asp-items="@ViewBag.Location" name="SearchString" class="form-select input-booking-location">
-                    <option>Select Location</option>
+                    <option value="all">All</option>
                 </select>
             </fieldset>
             <fieldset>
@@ -41,8 +41,8 @@
         <img src="/img/banner.png" />
     </div>
 </div>
-<p class="title-content" data-aos="fade-left">Most Picked</p>
-<div class="image-grid" data-aos="fade-left">
+<p class="title-content" >Most Picked</p>
+<div class="image-grid">
     @foreach (HotelListVM popularHotel in Model.PopularList)
     {
         if (popularHotel == Model.PopularList.First())
@@ -100,10 +100,10 @@
 
 
 </div>
-<p class="title-content" data-aos="fade-right">Have King Bed</p>
+<p class="title-content" >Have King Bed</p>
 
 <section class="vertical-center-3 slider " data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos="fade-right">
+     data-aos-easing="ease-in-sine">
     @foreach (var hotelKingBed in Model.HotelBedList)
     {
         <div>
@@ -131,11 +131,9 @@
 
 
 </section>
-<p class="title-content" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos="fade-up-right">Have Kitchen in room</p>
+<p class="title-content">Have Kitchen in room</p>
 
-<section class="vertical-center-3 slider" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos="fade-up-right">
+<section class="vertical-center-3 slider" >
     @foreach (var hotelKingBed in Model.KitchenInRoom)
     {
         <div>

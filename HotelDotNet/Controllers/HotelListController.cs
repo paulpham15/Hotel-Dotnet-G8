@@ -40,11 +40,11 @@ namespace HotelDotNet.Controllers
             ViewData["datetime"] = datetime;
             ViewData["day"] = day;
             var HotelList = new List<Hotel>();
-            if(searchString != null)
+            if(searchString != null && searchString!="all")
             {
                 HotelList = await _context.Hotels.Where(q=> q.Location == searchString).ToListAsync();
             }
-            else
+            else 
             {
                 HotelList = await _context.Hotels.ToListAsync();
             }
